@@ -25,9 +25,9 @@ Changes compared to last year:
 | 8     | Mar 23      |   Edge computing, TinyML| P, R | end Assignment 1, handout Assignment 2 |
 | 9     | Apr 06       |  Energy |S (N?)|  |
 | -    | Apr 14   |   Easter Holiday (?) | - | - |
-| 10     | Apr 20      |   IBMs IoT Offering |Jan Ekstrøm tbc | deadline Assignment 2|
+| 10     | Apr 20      |   IBMs IoT Offering |Jan Ekstrøm tbc | |
 | 11     | Apr 27       |  Security |S, Alessandro Bruni ?|  |       
 | 12   | May 4      | IoT & Ethics |Irina tbc, S| ?? |
-| 13    | May 11     |   Space IoT- Satellites and more | J, S | |
+| 13    | May 11     |   Space IoT- Satellites and more | J, S | deadline Assignment 2|
 
 
