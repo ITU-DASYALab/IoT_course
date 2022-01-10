@@ -9,10 +9,11 @@ Changes compared to last year:
   
   Lecturers this year:
   - S Sebastian
+  - K Kasper
   - J Julian
   - N Niels
   - P Paul
-  - R Rasmus
+
 
 
 | #        | Date           | Program  | Who  | Comments  |
@@ -24,7 +25,7 @@ Changes compared to last year:
 | 5    | Mar 02      |  Networking II - LPWAN & LoRa |S | |
 | 6     | Mar 09      | Data stacks & management |S |  |
 | 7    | Mar 16     |    Data analytics  | N |  |
-| 8     | Mar 23      |   Edge computing, TinyML| P, R | end Assignment 1, handout Assignment 2 |
+| 8     | Mar 23      |   Edge computing, TinyML| P, K | end Assignment 1, handout Assignment 2 |
 | 9     | Apr 06       |  Energy |S (N?)|  |
 | -    | Apr 14   |   Easter Holiday (?) | - | - |
 | 10     | Apr 20      |   IBMs IoT Offering |Jan Ekstrøm tbc | |
