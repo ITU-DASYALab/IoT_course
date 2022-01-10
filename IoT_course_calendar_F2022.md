@@ -1,3 +1,5 @@
+__This is a draft, for planning - not authoritative. Final valid version is on LearnIT!__
+
 Time: Wednesdays, 14 - 16 Lecture, 16 - 18 Exercise
 
 Changes compared to last year:
