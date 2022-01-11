@@ -19,7 +19,7 @@ Changes compared to last year:
 | #        | Date           | Program  | Who  | Comments  |
 | ------------- |:-------------:| -----:|-----:|-----:|
 | 1     | Feb 02 | Introduction, System Design / Architecture | S |   |
-| 2     | Feb 09     |  Embedded programming  | S  | + Assignment 1  |
+| 2     | Feb 09     |  Embedded programming  | S + N | + Assignment 1  |
 | 3     | Feb 16     |  Sensing and Acting |S| |S | |
 | 4    | Feb 23     |   Networking I - Overview| S  | |
 | 5    | Mar 02      |  Networking II - LPWAN & LoRa |S | |
