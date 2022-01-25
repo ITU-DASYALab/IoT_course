@@ -1,20 +1,21 @@
 ## General hints
 
-Good places to find literature:
+Generally good places to find literature, for IoT and beyond:
 
-https://dblp.uni-trier.de/
-https://scholar.google.com/
-https://www.researchgate.net/
-https://ieeexplore.ieee.org/
+  * https://dblp.uni-trier.de/
+  * https://scholar.google.com/
+  * https://www.researchgate.net/
+  * https://ieeexplore.ieee.org/
 
 ## IoT Textbooks
 
 At the time of writing (Jnauary 2022), there is no single IoT Textbook that we can fully recommend. 
 Some  reasons for this might be
-  - fast technological development, industry/markets driven
-  - diversity of IoT - and the fact that specific authors tend to always present from their respective angle
+  - Diversity of IoT: The term 'IoT' contains far too many things (pun intended) to be addressed in one coherent view or book.
+    - Authors tend to always present from their respective angle, depending on what industry or research area they come from.
+  - Fast technological development, industry/markets driven - the latest developments relevant for our field literally are not older than just a few months or years.
 
-Among the most useful:
+Among the most useful introductory textbooks:
 
 Buyya, R., & Dastjerdi, A. V. (Eds.). (2016). Internet of Things: Principles and paradigms. Elsevier.
 
@@ -72,7 +73,6 @@ IEEE Internet of Things Journal, 3(5), 720-734.
 
 ## Networking
 
-
 Tanenbaum, A. S., & Wetherall, D. (1996). Computer networks. Prentice-Hall international editions, I-XVII.
 Please read: Ch. 1.4 Reference Models
 
@@ -84,7 +84,7 @@ optional. in-depth radio propagation - a glimpse into:
 Barclay, L. (Ed.). (2003). Propagation of radiowaves (Vol. 2). Iet.
 
 
-Layer models / OSI/ISO:
+### Layer models / OSI/ISO:
 
 
 Day, J. D., & Zimmermann, H. (1983). The OSI reference model. Proceedings of the IEEE, 71(12), 1334-1340.
