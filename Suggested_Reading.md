@@ -53,6 +53,10 @@ Krčo, S., Pokrić, B., & Carrez, F. (2014, March). Designing IoT architecture (
 Eclipse IoT Working Group. (2016). The three software stacks required for iot architectures. IoT software requirements and how to implement then using open source technology.
 https://iot.eclipse.org/community/resources/white-papers/pdf/Eclipse%20IoT%20White%20Paper%20-%20The%20Three%20Software%20Stacks%20Required%20for%20IoT%20Architectures.pdf
 
+Zeuch, S., Chaudhary, A., Del Monte, B., Gavriilidis, H., Giouroukis, D., Grulich, P. M., ... & Markl, V. (2019). The nebulastream platform: Data and application management for the internet of things. arXiv preprint arXiv:1910.07867.
+
+https://www.nebula.stream/paper/zeuch_cidr20.pdf
+
 ## Sensors
 
 National Instruments Measurement Fundamentals series - http://www.ni.com/white-paper/14860/en/
