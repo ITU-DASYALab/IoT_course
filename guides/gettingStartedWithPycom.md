@@ -17,7 +17,7 @@ but start by
 - installing VS Code (if you don't have it)
 - installing the pymakr plugin - https://docs.pycom.io/gettingstarted/software/vscode/
 
-(update:  it seems there s problems with vscode 1.53 ... for now, we have to stick to 1.52)
+(note: with every new version of vscode, things tend to break between vscode and pymakr - read more here: https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/vscodePymakr.md)
 
 ## Hardware / Parts
 
