@@ -72,6 +72,41 @@ Serial connection via USB cable is our preferred choice - rather than WiFi.
  ```
  >>> print('hello world!')
   ```
+  
+  Try running the following "blink" script on your device.
+  Try altering the code in various places. How do you make it blink blue?
+  What happens when you reset the board on the reset-button?
+  What is the difference between _running_ code and _uploading_ code.
+
+```
+#Hello World from pycom LoPy
+
+import machine,  pycom, time
+
+pycom.heartbeat(False)
+
+print("")
+print("Hello World from pycom LoPy")
+print("On-board RGB LED will blink 10 times")
+
+def blink():
+    pycom.rgbled(0x007f00) # green
+    time.sleep(0.15)
+    pycom.rgbled(0x7f7f00) # yellow
+    time.sleep(0.15)
+    pycom.rgbled(0x7f0000) # red
+    time.sleep(0.15)
+    pycom.rgbled(0)             # off
+    time.sleep(.55)
+    return
+    
+for x in range(0, 10):  
+    print("*",  end="")
+    blink()
+
+print("")    
+pycom.heartbeat(True)
+```
 
   - Stop WiFi AP - per default, the LoPys start running a WiFi Access Point - that is a bad idea in many ways (in what ways?)
   This is how you stop it:
