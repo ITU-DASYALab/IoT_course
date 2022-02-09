@@ -1,20 +1,20 @@
 ## An update on visual studio code and pycom
 
-last checked: 25 january, 2022
+last checked: 25 january, 2022 / 09 february, 2022
 
-__TL;DR: vs code 1.63 + pymakr 1.17 seems to work fine.__
+__TL;DR: vs code 1.64 + pymakr 1.17 seems to work fine.__
 
-background:
+### background:
 
 there are well-known ongoing version compatibility issues between
 vs code and pycoms pymakr extension.
 with every version upgrade, things tend to break.
 
-should you need to roll back:
+### should you need to roll back:
 
 older versions of vs code and pymakr plugin are here:
 
-https://code.visualstudio.com/updates/v1_63
+https://code.visualstudio.com/updates/v1_64
 
 https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr
 
@@ -34,7 +34,7 @@ Pymakr v1.1.12
 
 ==> update to pymakr 1.17
 
-vs code - November 2021 (version 1.63)
+vs code - January 2022 (version 1.64)
 Pymakr v1.1.17
 ==> works fine!
 
