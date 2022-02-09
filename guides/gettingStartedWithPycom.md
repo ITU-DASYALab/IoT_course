@@ -76,7 +76,7 @@ Serial connection via USB cable is our preferred choice - rather than WiFi.
   Try running the following "blink" script on your device.
   Try altering the code in various places. How do you make it blink blue?
   What happens when you reset the board on the reset-button?
-  What is the difference between _running_ code and _uploading_ code.
+  What is the difference between _running_ code and _uploading_ code?
 
 ```
 #Hello World from pycom LoPy
