@@ -59,6 +59,10 @@ https://www.nebula.stream/paper/zeuch_cidr20.pdf
 
 ## Sensors
 
+With one or two grains of salt added, read:
+Sehrawat, Deepti, and Nasib Singh Gill. "Smart sensors: Analysis of different types of IoT sensors." 2019 3rd International Conference on Trends in Electronics and Informatics (ICOEI). IEEE, 2019. - 
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8862778
+
 National Instruments Measurement Fundamentals series - http://www.ni.com/white-paper/14860/en/
 
 ## Embedded systems
