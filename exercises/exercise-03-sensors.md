@@ -17,11 +17,11 @@ Also, pay attention - not every sample code is perfect or complete.
 
 ## Accompanying Questions:
 
-What is the difference between analog and digital sensors?
-What is an ADC? What are its interesting parameters?
-How do we communicate with sensors on a board?
-What are the most important performance characteristics of a sensor?
-What are indicators of data integrity and quality?
-What strategies for calibration of sensors do you know?
-For our concrete example, CO2 measuremnets, what can be said about the values we measure, and their meaning?
-What are examples of actuators that you could use to provide local feedback on sensor data?
+- What is the difference between analog and digital sensors?
+- What is an ADC? What are its interesting parameters?
+- How do we communicate with sensors on a board?
+- What are the most important performance characteristics of a sensor?
+- What are indicators of data integrity and quality?
+- What strategies for calibration of sensors do you know?
+- For our concrete example, CO2 measuremnets, what can be said about the values we measure, and their meaning?
+- What are examples of actuators that you could use to provide local feedback on sensor data?
