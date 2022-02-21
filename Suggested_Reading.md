@@ -91,9 +91,23 @@ optional. in-depth radio propagation - a glimpse into:
 
 Barclay, L. (Ed.). (2003). Propagation of radiowaves (Vol. 2). Iet.
 
+### LPWAN
+
+Raza, Usman, Parag Kulkarni, and Mahesh Sooriyabandara. "Low power wide area networks: An overview." ieee communications surveys & tutorials 19.2 (2017): 855-873.
+https://ieeexplore.ieee.org/abstract/document/7815384
+
+Chaudhari, Bharat S., Marco Zennaro, and Suresh Borkar. "LPWAN technologies: Emerging application characteristics, requirements, and design considerations." Future Internet 12.3 (2020): 46.
+https://www.mdpi.com/1999-5903/12/3/46
+
+#### esp. LoRaWAN
+
+de Carvalho Silva, Jonathan, et al. "LoRaWAN—A low power WAN protocol for Internet of Things: A review and opportunities." 2017 2nd International Multidisciplinary Conference on Computer and Energy Science (SpliTech). IEEE, 2017.
+https://ieeexplore.ieee.org/abstract/document/8019271
+
+Haxhibeqiri, Jetmir, et al. "A survey of LoRaWAN for IoT: From technology to application." Sensors 18.11 (2018): 3995.
+https://www.mdpi.com/1424-8220/18/11/3995
 
 ### Layer models / OSI/ISO:
-
 
 Day, J. D., & Zimmermann, H. (1983). The OSI reference model. Proceedings of the IEEE, 71(12), 1334-1340.
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1457043
