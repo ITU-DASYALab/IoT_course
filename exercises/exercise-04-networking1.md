@@ -51,3 +51,16 @@ Write a python script or use a tool such as Node-RED to listen to and store inco
 If you have access to some cloud instance or a Pi, install and run your own MQTT broker.
 
 
+### Accompanying Questions:
+
+- What network options do you see for your indoor air sensor?
+- What are their benefits and disadvantages?
+- In particular, how would you compare Wi-Fi, Bluetooth, Mobile?
+- What kind of data is MQTT suitable for?
+- What are some prerequisites for using MQTT?
+
+---
+
+
+
+
