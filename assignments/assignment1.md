@@ -188,6 +188,7 @@ If you have access to some cloud instance or a Pi, install and run your own MQTT
 - In particular, how would you compare Wi-Fi, Bluetooth, Mobile?
 - What kind of data is MQTT suitable for?
 - What are some prerequisites for using MQTT?
+- What can you say about security measures in MQTT?
 
 ---
 
