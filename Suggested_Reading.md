@@ -7,6 +7,13 @@ Generally good places to find literature, for IoT and beyond:
   * https://www.researchgate.net/
   * https://ieeexplore.ieee.org/
 
+Judging a journal/publication's ranking and reputation is a complex issue and beyond scope here, but as an introduction,
+  * https://en.wikipedia.org/wiki/Journal_ranking
+
+  and a popular ranking site:
+
+  * https://www.scimagojr.com/
+
 ## IoT Textbooks
 
 At the time of writing (Jnauary 2022), there is no single IoT Textbook that we can fully recommend. 
