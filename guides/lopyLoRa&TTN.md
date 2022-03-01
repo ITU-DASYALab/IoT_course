@@ -2,7 +2,7 @@
 
 We know how to connect to and program the LoPy4.
 
-## LoRaWAN
+## LoRaWAN - Connecting to TTN
 
 Now let s talk LoRa, or more specifically, LoRaWAN.
 
@@ -92,9 +92,9 @@ while True:
 
 Check if all devices show up  ok, and are sending data.
 
-=======================================================================
+
 ## Sensor data via LoRaWAN
-=======================================================================
+
 
 Now combine the two elements -
 
