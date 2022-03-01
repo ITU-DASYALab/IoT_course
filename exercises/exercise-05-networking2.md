@@ -20,6 +20,10 @@ https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/lopyLoRa%26TTN.md
   
 Link here for payload exercise: https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/optimizingPayload.md
 
+This Things Network guide is useful:
+
+https://www.thethingsnetwork.org/docs/devices/bytes/
+
 
 ### Accompanying Questions:
 
