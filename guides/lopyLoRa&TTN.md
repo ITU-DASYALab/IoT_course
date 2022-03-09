@@ -16,8 +16,8 @@ On the TTN-side we'll decode the data with a decoder we give you and send it to 
 The steps you'll go through in this exercise is:
 
 1. __Configure an application on The Things Network__
-    - Create a user on [The Things Network](thethingsnetwork.org/login/) 
-    - Create an application on the [TTN console}(https://eu1.cloud.thethings.network/console/) (See hints further down)
+    - Create a user on [The Things Network](https://thethingsnetwork.org/login/) 
+    - Create an application on the [TTN console](https://eu1.cloud.thethings.network/console/) (See hints further down)
     - Register an End Device (See hints further down)
         - Get your LoPys Device EUI (run the script from [our github](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/lopyLoRa%26TTN.md))
     - Look at the live data (while you do the next step: connect your device) 
