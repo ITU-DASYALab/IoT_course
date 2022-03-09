@@ -15,41 +15,42 @@ On the TTN-side we'll decode the data with a decoder we give you and send it to 
 ## Steps to do
 The steps you'll go through in this exercise is:
 
-1. Configure an application on The Things Network
+1. __Configure an application on The Things Network__
     - Create a user on [The Things Network](thethingsnetwork.org/login/) 
     - Create an application on the [TTN console}(https://eu1.cloud.thethings.network/console/) (See hints further down)
     - Register an End Device (See hints further down)
         - Get your LoPys Device EUI (run the script from [our github](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/lopyLoRa%26TTN.md))
     - Look at the live data (while you do the next step: connect your device) 
 
-2. Connect your LoPy to The Things Network
+2. __Connect your LoPy to The Things Network__
     - __REMEMBER__ to attach the antenna to the LoPy. We'll need the connector next to the LED _which is __not__ right next to the reset button_ 
     - Grab the default code from [our github](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/lopyLoRa%26TTN.md)
     - Fill in the APP_EUI and APP_KEY from your end-device in the example code and run it. If all is configured correctly you should be able to see it in the TTN console.
     - _Q:_ What is this code sending? And how is the payload constructed?
 
-3. Prepare your sensors payload.
+3. __Prepare your sensors payload__
     - We have defined the payload format you must follow. It is specified in the hints and snippets below. If you don't follow this format you need to write your own decoder.
     - A few questions to think about:
         - What are the supported ranges for each value? 
         - How lossy is this encoding? 
         - What is the sensitivity of each value after encoding?
     
-4. Add LoRa-connectivity to this
+4. __Add LoRa-connectivity__
     - Copy the relevant parts of your TTN example code into your payload-producing sensor script
     - Alter the sending part so you send your new payload instead.
     - Alter your script so you only send every minute or so.
 
-5. Back to the TTN console!
+5. __Back to the TTN console!__
     - Confirm that there is now 4 bytes arriving in the TTN console.
     - Add the decoding script to TTN (under "payload formatters")
     - Confirm that you can see the correct values in the live data.
     - Add an "Integration". You should add a custom webhook with format JSON and baseurl "https://training.itu.dk/iot2022". Enable uplink messages with the path "/".
 
-6. Grafana: Looking at the data
+6. __Grafana: Looking at the data__
     - Create your user at the Grafana instance at training.itu.dk. You should have gotten an invitation in your itu-mail.
     - Go to our [communal TTN dashboard](https://training.itu.dk:3000/d/z7rSMlY7z/ttn-co2-lopy-all?orgId=5&refresh=10s) and see if you can see your device readings.
-7. Finally done!
+
+7. __Finally done!__
 
 ## Home edition
 
