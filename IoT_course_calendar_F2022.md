@@ -28,7 +28,7 @@ Changes compared to last year:
 | 8     | Mar 23      |   Edge computing, TinyML| P, K | end Assignment 1, handout Assignment 2 |
 | 9     | Apr 06       |  Energy |S (N?)|  |
 | -    | Apr 14   |   Easter Holiday (?) | - | - |
-| 10     | Apr 20      |   IBMs IoT Offering |Jan Ekstrøm tbc | |
+| 10     | Apr 20      |   IBMs IoT Offering |Jan Ekstrøm tbc | 14-15 confirmed: IBM's asset management løsning som indeholder komponenter der anvender IoT og AI. |
 | 11     | Apr 27       |  Security |S, Alessandro Bruni ?|  |   | 12   | May 4      | IoT & Ethics |Irina tbc, S| ?? |
 | 12   | May 4  |    Space IoT- Satellites and more | J, S | |
 | 13    | May 11     |   IoT & Ethics |Irina tbc, S | |
