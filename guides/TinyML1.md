@@ -2,6 +2,7 @@
 # Data acquisition locally #
 Lopy sends data by serial port to jupyter notebook.
 * First: Compile the data acquisition code in LoPy
+This code each time that the S1 button is pushed will send 200 samples by serial port.
  ``` python
 # Code: project -> Data Acquisition process
 #IoT
@@ -28,7 +29,7 @@ def acquisition():
         time.sleep(4)
     pycom.rgbled(0x7f0000) # red
 #################configuration################
-button=Pin('P13', mode=Pin.IN,pull=Pin.PULL_UP)
+button=Pin('P14', mode=Pin.IN,pull=Pin.PULL_UP)
 #sensor
 i2c = I2C(2) # create and use default PIN assignments (P9=SDA, P10=SCL)
 sensor = SCD30(i2c, 0x61)
@@ -40,4 +41,8 @@ while True:
         acquisition()
 
 ```
+* Note: If you have issues with S1 button, you can chance to P13 and use extra button in hardware.
+* Second: When LoPy is ready to sent data with the red light power on. Disconnect the LoPy of the serial port of Visual Studio  (Pymakr Console check)
+* Third: Run the [code](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/Data%20acquisition.ipynb) changing the COM number to yours. 
+* Fourth: Save your dataset in csv format
 
