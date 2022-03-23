@@ -8,14 +8,11 @@
 # Code: project -> Binary classification algorithm
 # IoT course
 #
-#https://forum.micropython.org/viewtopic.php?t=1747
-# Thanks Niels..!!
 #
 
 import time
 import math
 import pycom
-import gc
 from machine import UART                    
 from machine import I2C
 from scd30 import *
@@ -32,6 +29,8 @@ def sigmoid_fuction (input):
     return (1/(1+pow(e,-input)))
 
 def neuralmodel (input):
+    #normalize the dataset
+    # out= (in-min)/(max-min)
     l0n0=(input[0]-1201.52)/(40000.0-1201.52)
     l0n1=(input[1]-22.19)/(32.04-22.19)
     l0n2=(input[2]-27.9)/(93.81-27.9)
@@ -68,5 +67,4 @@ while True:
         else :
              print(round(co2,2),';',round(temperature,2),';',round(hum,2))
         time.sleep_ms(4000)
-        gc.collect()
-        print(gc.mem_free())
+
