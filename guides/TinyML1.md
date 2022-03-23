@@ -45,4 +45,5 @@ while True:
 * Second: When LoPy is ready to sent data with the red light power on. Disconnect the LoPy of the serial port of Visual Studio  (Pymakr Console check)
 * Third: Run the [code](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/Data%20acquisition.ipynb) (jupyter notebook) changing the COM number to yours. 
 * Fourth: Save your dataset in csv format
+* Fifth: Make your own models :)
 
