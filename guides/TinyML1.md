@@ -2,7 +2,7 @@
 # Data acquisition locally #
 Lopy sends data by serial port to jupyter notebook.
 * First: Compile the data acquisition code in LoPy
-´´´ python
+ ``` python
 # Code: project -> Data Acquisition process
 #IoT
 #Libraries
@@ -39,4 +39,5 @@ while True:
     if(button()==1):
         acquisition()
 
-´´´
+```
+
