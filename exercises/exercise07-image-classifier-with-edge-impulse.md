@@ -2,7 +2,7 @@
 
 **Goal**: Training a simple neural network for classifying smile/ non-smile images.
 
-Download the dataset's .zip file from [this link](smileDS.7z) and unzip it.
+Download the dataset's .zip file from [this link](smileDS.7z) and unzip it. The dataset is adopted from [this repository](https://github.com/meng1994412/Smile_Detection) on GitHub.
 
 Create an account on the [Edge Impulse](https://www.edgeimpulse.com/), then follow the following steps:
 
