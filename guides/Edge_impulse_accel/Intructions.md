@@ -27,6 +27,8 @@ We can start to train the model with the suggested setup
 You can look that the model is quantized from float32 to int8.
 
 ## Retrain model ##
+
+Train model
 ## Live Classification ## 
 You can test how the model classifies one feature 
 
