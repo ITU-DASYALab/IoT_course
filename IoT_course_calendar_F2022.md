@@ -31,7 +31,7 @@ Changes compared to last year:
 | 10     | Apr 20      |   IBMs IoT Offering |Jan Ekstrøm tbc | 14-15 confirmed: IBM's asset management løsning som indeholder komponenter der anvender IoT og AI. |
 | 11     | Apr 27       |  Security |S, Alessandro Bruni ?|  |   | 12   | May 4      | IoT & Ethics |Irina tbc, S| ?? |
 | 12   | May 4  |    Space IoT- Satellites and more | J, S | |
-| 13    | May 11     |   IoT & Ethics |Irina tbc, S | |
+| 13    | May 11     |   IoT & Ethics |Irina tbc, S | HAND OUT EXAM Questions |
 
 
 
