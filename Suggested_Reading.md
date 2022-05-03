@@ -169,11 +169,25 @@ https://dl.acm.org/doi/abs/10.1145/2818048.2819992
 
 ## Satellite IoT
 
-Fraire, J. A., Céspedes, S., & Accettura, N. (2019, October). Direct-To-Satellite IoT-A Survey of the State of the Art and Future Research Perspectives. In International Conference on Ad-Hoc Networks and Wireless (pp. 241-258). Springer, Cham.
-https://link.springer.com/chapter/10.1007/978-3-030-31831-4_17
+
 
 Wei, J., Han, J., & Cao, S. (2019). Satellite IoT edge intelligent computing: A research on architecture. Electronics, 8(11), 1247.
 https://www.mdpi.com/2079-9292/8/11/1247
+
+McDowell, Jonathan C. "The low earth orbit satellite population and impacts of the SpaceX Starlink constellation." The Astrophysical Journal Letters 892.2 (2020): L36.
+https://iopscience.iop.org/article/10.3847/2041-8213/ab8016/meta
+ 
+ Qu, Zhicheng, et al. "LEO satellite constellation for Internet of Things." IEEE access 5 (2017): 18391-18401.
+ https://ieeexplore.ieee.org/abstract/document/8002583
+ 
+ Huang, Huawei, et al. "Green data-collection from geo-distributed IoT networks through low-earth-orbit satellites." IEEE Transactions on Green Communications and Networking 3.3 (2019): 806-816.
+ https://ieeexplore.ieee.org/abstract/document/8681409
+ 
+ Update on the Satellite Internet of Things Market, March 2022
+ http://satellitemarkets.com/market-trends/update-satellite-internet-things-market
+ 
+ Fraire, J. A., Céspedes, S., & Accettura, N. (2019, October). Direct-To-Satellite IoT-A Survey of the State of the Art and Future Research Perspectives. In International Conference on Ad-Hoc Networks and Wireless (pp. 241-258). Springer, Cham.
+https://link.springer.com/chapter/10.1007/978-3-030-31831-4_17
 
 ## Guides, Coding, Hacking
 
