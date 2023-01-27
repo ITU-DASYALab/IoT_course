@@ -106,6 +106,9 @@ https://ieeexplore.ieee.org/abstract/document/7815384
 Chaudhari, Bharat S., Marco Zennaro, and Suresh Borkar. "LPWAN technologies: Emerging application characteristics, requirements, and design considerations." Future Internet 12.3 (2020): 46.
 https://www.mdpi.com/1999-5903/12/3/46
 
+Mekki, Kais, et al. "A comparative study of LPWAN technologies for large-scale IoT deployment." ICT express 5.1 (2019): 1-7.
+https://www.sciencedirect.com/science/article/pii/S2405959517302953
+
 #### esp. LoRaWAN
 
 de Carvalho Silva, Jonathan, et al. "LoRaWAN—A low power WAN protocol for Internet of Things: A review and opportunities." 2017 2nd International Multidisciplinary Conference on Computer and Energy Science (SpliTech). IEEE, 2017.
