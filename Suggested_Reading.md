@@ -170,6 +170,8 @@ https://dl.acm.org/doi/abs/10.1145/2818048.2819992
 
 ## Edge Computing
 
+AI / ML / TinyML - see https://github.com/things-guide/things-guide-resources/wiki/Embedded-ML
+
 ## Satellite IoT
 
 
