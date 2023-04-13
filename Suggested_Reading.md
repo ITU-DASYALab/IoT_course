@@ -139,6 +139,14 @@ https://ieeexplore.ieee.org/abstract/document/8688434
 
 Yin, L., Fang, B., Guo, Y., Sun, Z., & Tian, Z. (2020). Hierarchically defining Internet of Things security: From CIA to CACA. International Journal of Distributed Sensor Networks, 16(1), 1550147719899374.
 
+ Additional reading on security, suggested Philippe Bonnet - Thursday, 13 April 2023:
+  	
+    Useful documents related to IoT security: https://www.enisa.europa.eu/news/enisa-news/iot-security-enisa-publishes-guidelines-on-securing-the-iot-supply-chain
+    
+    OWASP IoT Top 10: https://wiki.owasp.org/index.php/OWASP_Internet_of_Things_Project
+    
+    Standards for IoT security: https://www.nist.gov/itl/applied-cybersecurity/nist-cybersecurity-iot-program
+
 
 ## Energy
 
