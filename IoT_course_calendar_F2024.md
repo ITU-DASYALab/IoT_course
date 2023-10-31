@@ -29,7 +29,7 @@ Changes compared to 2023:
 Easter Holiday
 | 9     | Apr 04      |  Energy |S |  |
 | 10    | Apr 11   |   Security |S, Alessandro Bruni ?| - |
-| 11     | Apr 18     |   Industry Guest Talk | tba. |
+| 11     | Apr 18     |   Industry Guest Talk | tba. - ideas: IBM, trifork, onomondo, force, cibicom   |
 | 12   | Apr 25      | IoT & Ethics | Irina?    | ?? |
 | 14   | May 01  |    Space IoT- Satellites and more | J, S | |
 
