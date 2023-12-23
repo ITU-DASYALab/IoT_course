@@ -22,7 +22,7 @@ Changes compared to 2023:
 | 2     | Feb 08     |  Embedded systems & programming  | S + R | + Assignment 1  |
 | 3     | Feb 15    |  Sensing |S| |S | |
 | 4    | Feb 22    |   Networking I - Overview|  S  | |
-| 5    | Feb 29     |  Networking II - LPWAN & LoRa |S | |
+| 5    | Feb 29     |  Networking II - LPWAN, LoRa & LoRaWAN |S | |
 | 6     | Mar 07    | Data stacks, management and visualization |S |  |
 | 7    | Mar 14    |    Data analytics: ML basics  | S, R |  |
 | 8     | Mar 21      |   Edge computing & TinyML| S, R, J | end Assignment 1, handout Assignment 2 |
