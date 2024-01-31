@@ -86,6 +86,8 @@ Hahm, O., Baccelli, E., Petersen, H., & Tsiftes, N. (2015).
 Operating systems for low-end devices in the internet of things: a survey. 
 IEEE Internet of Things Journal, 3(5), 720-734.
 
+E.Baccelli et al., RIOT: an Open Source Operating System for Low-end Embedded Devices in the IoT, IEEE Internet of Things Journal, 2018.
+
 ## Networking
 
 Tanenbaum, A. S., & Wetherall, D. (1996). Computer networks. Prentice-Hall international editions, I-XVII.
