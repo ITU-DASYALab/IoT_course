@@ -23,7 +23,7 @@ Remember that we use the LILYGO_TBeam_V1.1.
 ### Hello World Guide
 Below is a simple guide for setting up your development environment, getting familiar with your board, and creating a simple program that can allow your Lily-Go-board to blink.
 
-**LINK WILL BE ADDED HERE**
+[You find the guide here](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/lilyGo_hello_world.md)
 
 ---
 

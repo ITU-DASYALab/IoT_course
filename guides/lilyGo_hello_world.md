@@ -78,7 +78,7 @@ Now, we only need to set up the loop that allows for our LED to blink. We do thi
 Now we are ready to verify & upload! 
 If you have followed the guide, you should be able to verify the program and also upload your simple blink program:
 
-![Alt text](image.png)
+![Alt text](images/upload_verify_buttons.png)
 
 You use (1) to verify your program and (2) to upload your program to your board.
 The IDE will (hopefully) open the output window, where you can see your program getting uploaded. There might be some trouble with connection and getting your program to start on the board.
