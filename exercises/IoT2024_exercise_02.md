@@ -5,25 +5,23 @@
 
   * Familiarize yourself with a LilyGo-board
   * Connect to it
-  * Say "Hello World".
+  * Write and upload a simple blink program
 
 ---
 
 ### Useful resources
 
-Below are a few useful resources to refer to when trying to solve exercises.
+Below are a few valuable resources to refer to when trying to solve exercises.
 Remember that we use the LILYGO_TBeam_V1.1.
 
-**Repository holding turtorials and other useful information, directly from the LilyGo-manufactorer:** [Click here for the repository](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series?tab=readme-ov-file).
+**Repository holding turtorials and other helpful information directly from the LilyGo-manufactorer:** [Click here for the repository](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series?tab=readme-ov-file).
 
 **Pinmap for our board:** [Click here for pinmap](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/assets/image/t-beam_v1.1_pinmap.jpg).
-
-
 
 ---
 
 ### Hello World Guide
-Below is a simple guide for setting up your development environment, getting familiar with your board, as well as a how to create a simple program that can allow your Lily-Go-board to blink.
+Below is a simple guide for setting up your development environment, getting familiar with your board, and creating a simple program that can allow your Lily-Go-board to blink.
 
 **LINK WILL BE ADDED HERE**
 
