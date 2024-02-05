@@ -81,10 +81,12 @@ Barr, M., & Massa, A. (2006). Programming embedded systems: with C and GNU devel
 Heath, S. (2002). Embedded systems design. Elsevier
 
 Opler, Ascher (January 1967). "Fourth-Generation Software". Datamation. 13 (1): 22–24.
+via archive.org:
+https://ia600102.us.archive.org/17/items/TNM_4th_generation_software_hardware_-_Datamation_20171010_0125/TNM_4th_generation_software_hardware_-_Datamation_20171010_0125.pdf
 
 Hahm, O., Baccelli, E., Petersen, H., & Tsiftes, N. (2015). 
 Operating systems for low-end devices in the internet of things: a survey. 
-IEEE Internet of Things Journal, 3(5), 720-734.
+IEEE Internet of Things Journal, 3(5), 720-734
 
 E.Baccelli et al., RIOT: an Open Source Operating System for Low-end Embedded Devices in the IoT, IEEE Internet of Things Journal, 2018.
 
