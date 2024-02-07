@@ -11,7 +11,7 @@ This tutorial/exercise will set up a simple program on our LilyGo TBeam V1.1. In
 
 ## Setting up the physical board
 
-1. As a general rule, if a board has a radio and an antenna connector, always put on the antenna before powering up. Unterminated antenna connectors might lead to reflected signal, and damage the radio.
+1. As a general rule, if a board has a radio and an antenna connector, always connect the antenna before powering up. Unterminated antenna connectors might lead to reflected signal, and damage the radio.
    (Not likely to happen here, but it is good to follow that rule always.)
 2. Connect the board to your computer via the USB Micro cable.
 3. As long as we are powered over USB, we do not need a battery. But you may put one in anyway.
