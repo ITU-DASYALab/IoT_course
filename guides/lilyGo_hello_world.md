@@ -70,7 +70,7 @@ Now, we only need to set up the loop that allows for our LED to blink. We do thi
 
     void loop() {
         digitalWrite(LED, HIGH);
-        delay(1000); 
+        delay(1000); //delays are in ms
         digitalWrite(LED, LOW); 
         delay(1000);           
     }
