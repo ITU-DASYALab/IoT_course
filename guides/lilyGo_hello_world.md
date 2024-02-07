@@ -6,7 +6,16 @@ This tutorial/exercise will set up a simple program on our LilyGo TBeam V1.1. In
 
 - The Arduino IDE 
 - Micro-USB cable
-- A LilyGo TBeam v1.1 board ;) 
+- A LilyGo TBeam v1.1 board ;)
+
+
+## Setting up the physical board
+
+1. As a general rule, if a board has a radio and an antenna connector, always put on the antenna before powering up. Unterminated antenna connectors might lead to reflected signal, and damage the radio.
+   (Not likely to happen here, but it is good to follow that rule always.)
+2. Connect the board to your computer via the USB Micro cable.
+3. As long as we are powered over USB, we do not need a battery. But you may put one in anyway.
+
 
 ## Setting up Arduino IDE
 
@@ -108,7 +117,9 @@ You will see this a lot in later exercises.
         delay(5000);           
     }
 
-
+Another test you could do now is 
+to put in a battery, disconnect and reset your board -
+it should be blinking just like before!
 
 ## References/Inspiration/Sources
 - https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
