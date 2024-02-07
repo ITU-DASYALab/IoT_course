@@ -11,7 +11,7 @@ This tutorial/exercise will set up a simple program on our LilyGo TBeam V1.1. In
 ## Setting up Arduino IDE
 
 1. Download the relevant IDE for your system here: https://www.arduino.cc/en/software
-2. Clone this [repository](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series), and copy the *contents* of the **library** folder.
+2. Clone this [repository](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series), and copy the *contents* of the **lib** folder.
 3. Paste the contents to your Arduino Libraries Directory. You usually find this folder here:
     - For MacOS: ~/Documents/Arduino/libraries
     - For Linux: ~/Arduino/libraries
