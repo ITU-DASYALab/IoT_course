@@ -69,9 +69,9 @@ Now, we only need to set up the loop that allows for our LED to blink. We do thi
     }
 
     void loop() {
-        digitalWrite(LED_BUILTIN, HIGH);
+        digitalWrite(LED, HIGH);
         delay(1000); 
-        digitalWrite(LED_BUILTIN, LOW); 
+        digitalWrite(LED, LOW); 
         delay(1000);           
     }
 
@@ -86,6 +86,27 @@ You likely need to turn on the board or restart it.
 Try to hit these buttons on your board for approx. 6 seconds, or reach out, and I will help to troubleshoot.
 
 Hopefully, you will have a blinking board when you reach this part!
+
+To verify that it is really your code controlling the device, try changing the delay times and see if it reacts as expected.
+
+Also, we add another standard control mechnaism here: we write something to the serial output, which we can read from the Arduino IDE.
+You will see this a lot in later exercises.
+
+    #define LED 4
+
+    void setup() {
+        pinMode(LED, OUTPUT);
+        Serial.begin(9600);
+    }
+
+    void loop() {
+        digitalWrite(LED, HIGH);
+        Serial.println("On");
+        delay(5000); 
+        digitalWrite(LED, LOW); 
+        Serial.println("Off");
+        delay(5000);           
+    }
 
 
 
