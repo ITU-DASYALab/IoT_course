@@ -25,7 +25,7 @@ This tutorial/exercise will set up a simple program on our LilyGo TBeam V1.1. In
     - I recommend that your settings look somewhat like this:
         
         <img src="images/tools_settings.png" alt="Picture of recommended tools settings" style="width:300px;"/>
-5. After configuring our board tools, the final step is to ensure we have selected the correct port. It should look somewhat like this:
+5. After configuring our board tools, the final step is to ensure we have selected the correct port. It should look somewhat like this (exact looks may vary depending on OS):
     <img src="images/port_settings.png" alt="Picture of recommended port settings" style="width:600px;"/>
 
 ## Developing & uploading your first blink program
