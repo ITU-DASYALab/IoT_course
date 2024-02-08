@@ -121,6 +121,42 @@ Another test you could do now is
 to put in a battery, disconnect and reset your board -
 it should be blinking just like before!
 
+   ```
+#define LED 4
+
+TaskHandle_t Task1;
+TaskHandle_t Task2;
+
+void blinkLed( void * parameter ) {
+  while(1) {
+    digitalWrite(LED, HIGH);
+    delay(1000); 
+    digitalWrite(LED, LOW); 
+    delay(1000);     
+  }
+}
+
+void printStuff( void * parameter ) {
+  while(1) {
+    Serial.print("Blink on core ");
+    Serial.println(xPortGetCoreID());
+    delay(3000);
+  }
+}
+
+void setup() {
+    pinMode(LED, OUTPUT);
+    Serial.begin(9600);
+
+    xTaskCreatePinnedToCore(blinkLed,"Task1",10000,NULL,1,&Task1,0); 
+    xTaskCreatePinnedToCore(printStuff,"Task2",10000,NULL,1,&Task2,1); 
+}
+
+void loop() {
+          
+}
+```
+
 ## References/Inspiration/Sources
 - https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series
 - https://github.com/luckynrslevin/TTGO-T-Beam-Blinking
