@@ -121,6 +121,9 @@ Another test you could do now is
 to put in a battery, disconnect and reset your board -
 it should be blinking just like before!
 
+
+To run multiple tasks on the 2 cores of the ESP32 we can leverage FreeRTOS. 
+In the next example, we create 2 tasks each pinned to its own core. One blinks the LED, the other one prints debug messages.
    ```
 #define LED 4
 
