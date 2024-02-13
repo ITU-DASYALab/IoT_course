@@ -4,46 +4,8 @@
 ### Goal for the day
 
   * Familiarize yourself with the connections of a LilyGo-board
-  * Read the internal temperature sensor
   * Connect a CO2-sensor to the board
   * Read and understand the output of the sensor
-
-### Reading the internal temperature sensor
-
-The goal of this exercise is to be able to make some measurements of the environment. However, to get an understanding of how to read some sensor input, we can start by reading the temperature of the core on our board. Every ESP32 has an internal temperature sensor - not very useful for measuring the temperature in the surrounding environment, but useful for getting an understanding of the core's current temperature (which is useful in many development scenarios). Let's try and get some data from this sensor!
-
-[This](https://circuits4you.com/2019/01/01/esp32-internal-temperature-sensor-example/#google_vignette) tutorial explains how to make use of this internal temperature sensor. I have boiled it down to a more readable and suitable (for our setup) below:
-
-    extern "C" {
-      uint8_t temprature_sens_read();
-    }
-
-    uint8_t temprature_sens_read();
-
-    void setup() {
-      Serial.begin(115200);
-    }
-
-    void loop() {
-      Serial.print("Temperature: ");
-    
-      // Convert raw temperature in F to Celsius degrees
-      Serial.print((temprature_sens_read() - 32) / 1.8);
-      Serial.println(" C");
-      delay(1000);
-    }
-
-    // Source: https://circuits4you.com/2019/01/01/esp32-internal-temperature-sensor-example/#google_vignette
-
-This program is quite straightforward and similar to what we did last week. However, a new element is introduced:
-
-    extern "C" {
-      uint8_t temprature_sens_read();
-    }
-
-What this simply does is define a method to read the internal temperature, which is found on the uint8_t. However, as we are writing a type of C++ code, we need to use the method surrounding it to be able to read it. [Here](https://techexplorations.com/guides/arduino/programming/_t-in-uint8_t/) you can read more about this.
-
-You should now be able to read your internal temperature in the serial monitor!
 
 ### Connecting and reading an external Sensor
 
