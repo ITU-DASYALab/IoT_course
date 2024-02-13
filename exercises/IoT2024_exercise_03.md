@@ -15,10 +15,10 @@ The goal of this exercise is to be able to make some measurements of the environ
 [This](https://circuits4you.com/2019/01/01/esp32-internal-temperature-sensor-example/#google_vignette) tutorial explains how to make use of this internal temperature sensor. I have boiled it down to a more readable and suitable (for our setup) below:
 
     extern "C" {
-      uint8_t temprature_sens_read();
+      uint8_t temperature_sens_read();
     }
 
-    uint8_t temprature_sens_read();
+    uint8_t temperature_sens_read();
 
     void setup() {
       Serial.begin(115200);
@@ -28,7 +28,7 @@ The goal of this exercise is to be able to make some measurements of the environ
       Serial.print("Temperature: ");
     
       // Convert raw temperature in F to Celsius degrees
-      Serial.print((temprature_sens_read() - 32) / 1.8);
+      Serial.print((temperature_sens_read() - 32) / 1.8);
       Serial.println(" C");
       delay(1000);
     }
@@ -45,7 +45,7 @@ What this simply does is define a method to read the internal temperature, which
 
 You should now be able to read your internal temperature in the serial monitor!
 
-### Connecting and reading an external temperature Sensor
+### Connecting and reading an external Sensor
 
 **Note before we start:** Remember when working with physical computing, there is always a risk of things going wrong and breaking, different from software.
 Therefore, double-check you use the correct pins and make sure that your cables are away from the battery before even starting the device - just to be on the sure side ;)
