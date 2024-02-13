@@ -18,7 +18,22 @@ Before we start writing code, let's connect the sensor to our board.
 
 We use the Sensiron SCD30 sensor.
 [Here](https://github.com/Sensirion/arduino-i2c-scd30/blob/master/pinouts/esp32-devkitc.md) you can find a pinout for the SCD30 sensor, and [here](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/assets/image/t-beam_v1.1_pinmap.jpg) you can find a pinmap for our board (TTGO T-Beam V1.1). Connect the pins from the board to the sensor via the breadboard using the handed-out jumper cables.
-If you are unsure how a breadboard works, [this article](https://wiring.org.co/learning/tutorials/breadboard/) explains it pretty well.
+If you are unsure how a breadboard works, [this article](https://wiring.org.co/learning/tutorials/breadboard/) explains it pretty well. Below how to connect the sensors are expanded on:
+
+Using the jumper cables & the breadboard, you should connect the pins on your board and the pins on the SCD30 as follow:
+
+| T-Beam                | SCD30 |
+|-----------------------|-------|
+|3V3                    |VIN/VDD|
+|GND                    |GND    |
+|21                     |RX/SDA |
+|22                    |TX/SCL |
+
+Using these resources, we can conclude that our setup should look something like this:
+
+![pinout](images/scd_ttgo_pinout.png)
+
+**Source of pinmaps:** https://blog.fh-kaernten.at/ingmarsretro/files/2021/04/anschluss-rotated.jpg && https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/assets/image/t-beam_v1.1_pinmap.jpg?raw=true
 
 Now we are ready to turn on the device and write some code!
 
