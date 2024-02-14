@@ -51,13 +51,14 @@ With both your board connected to the sensor, as well as the I2C library downloa
 Once you got it running, let us talk about what we are seeing and how to interprete it.
 
 And about what might be happening here:
-´´
+
+```
 10:33:25.291 -> co2: 568.81	temperature: 23.00	humidity: 31.32
 10:33:35.322 -> co2: 570.12	temperature: 23.03	humidity: 31.17
 10:33:45.319 -> co2: 2842.36	temperature: 24.12	humidity: 68.11
 10:33:55.350 -> co2: 9174.95	temperature: 24.64	humidity: 65.74
 10:34:05.380 -> co2: 6610.78	temperature: 24.60	humidity: 48.32
-´´
+```
 
 
 
