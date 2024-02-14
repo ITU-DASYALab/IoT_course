@@ -12,6 +12,10 @@
 **Note before we start:** Remember when working with physical computing, there is always a risk of things going wrong and breaking, different from software.
 Therefore, double-check you use the correct pins and make sure that your cables are away from the battery before even starting the device - just to be on the sure side ;)
 
+Also, be aware that connections made via jumper cables and breadboard can be shaky -
+and of course nothing you find in real IoT devices.
+Before despairing, check and move all cables!
+
 #### Connecting the external sensor
 
 Before we start writing code, let's connect the sensor to our board.
