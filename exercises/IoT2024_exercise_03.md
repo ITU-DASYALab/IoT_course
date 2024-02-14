@@ -40,7 +40,9 @@ Now we are ready to turn on the device and write some code!
 #### Reading/programming the external sensor
 
 To be able to communicate with the sensor, we need some sort of I2C bus. Curious about the I2C bus? [Here](https://learn.sparkfun.com/tutorials/i2c/all) you can find more information about it! :D
-The simplest way to get an I2C bus for our sensor is to download it using the library manager in the Arduino IDE.
+Also, here is a simple [I2C scanner](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/I2C_scanner.md) to show you what I2C devices there are connected on your board.
+
+The simplest way to get an I2C bus for our specific sensor is to download it using the library manager in the Arduino IDE.
 Search for "Sensirion I2C SCD30", and when asked for download dependencies, answer yes.
 With both your board connected to the sensor, as well as the I2C library downloaded, you are ready to read some temperatures.
 
