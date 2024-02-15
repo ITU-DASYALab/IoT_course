@@ -7,6 +7,7 @@ Changes compared to 2022:
 
 Changes compared to 2023:
   - Edge, TinyML, Satellites re-introduced
+  - new hw platform: ESP32 TTGO T-Beam
   
   Lecturers this year:
   - S Sebastian
@@ -19,15 +20,15 @@ Changes compared to 2023:
 | #        | Date           | Program  | Who  | Comments  |
 | ------------- |:-------------:| -----:|-----:|-----:|
 | 1     | Feb 01 | Introduction, System Design & Architecture | S |   |
-| 2     | Feb 08     |  Embedded systems & programming  | S + R | + Assignment 1  |
+| 2     | Feb 08     |  Embedded systems & programming  | S + R |   |
 | 3     | Feb 15    |  Sensing |S| |S | |
-| 4    | Feb 22    |   Networking I - Overview|  S  | |
+| 4    | Feb 22    |   Networking I - Overview|  S  | Assignment? |
 | 5    | Feb 29     |  Networking II - LPWAN, LoRa & LoRaWAN |S | |
 | 6     | Mar 07    | Data stacks, management and visualization |S |  |
 | 7    | Mar 14    |    Data analytics: ML basics  | S, R |  |
-| 8     | Mar 21      |   Edge computing & TinyML| S, R, J | end Assignment 1, handout Assignment 2 |
+| 8     | Mar 21     |  Energy |S |  |
 Easter Holiday
-| 9     | Apr 04      |  Energy |S |  |
+| 9     | Apr 04  |   Edge computing & TinyML| S, R, J | end Assignment 1, handout Assignment 2 |
 | 10    | Apr 11   |   Security |S, Alessandro Bruni ?| - |
 | 11     | Apr 18     |   Industry Guest Talk | tba. - ideas: IBM, trifork, onomondo, force, cibicom   |
 | 12   | Apr 25      | IoT & Ethics | Irina?    | ?? |
