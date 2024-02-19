@@ -121,6 +121,10 @@ https://ieeexplore.ieee.org/abstract/document/8019271
 Haxhibeqiri, Jetmir, et al. "A survey of LoRaWAN for IoT: From technology to application." Sensors 18.11 (2018): 3995.
 https://www.mdpi.com/1424-8220/18/11/3995
 
+##### Maritime applications of LoRaWAN
+
+Pinelo, J.; Rocha, A.D.; Arvana, M.; Gonçalves, J.; Cota, N.; Silva, P. Unveiling LoRa’s Oceanic Reach: Assessing the Coverage of the Azores LoRaWAN Network from an Island. Sensors 2023, 23, 7394. https://doi.org/10.3390/s23177394 
+
 ### Layer models / OSI/ISO:
 
 Day, J. D., & Zimmermann, H. (1983). The OSI reference model. Proceedings of the IEEE, 71(12), 1334-1340.
