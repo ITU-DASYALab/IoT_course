@@ -102,6 +102,8 @@ optional. in-depth radio propagation - a glimpse into:
 
 Barclay, L. (Ed.). (2003). Propagation of radiowaves (Vol. 2). Iet.
 
+Sikimić, Miljan, et al. "An overview of wireless technologies for IoT network." 2020 19th International Symposium INFOTEH-JAHORINA (INFOTEH). IEEE, 2020.
+
 ### LPWAN
 
 Raza, Usman, Parag Kulkarni, and Mahesh Sooriyabandara. "Low power wide area networks: An overview." ieee communications surveys & tutorials 19.2 (2017): 855-873.
