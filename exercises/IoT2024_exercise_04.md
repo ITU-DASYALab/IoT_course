@@ -40,7 +40,7 @@ And something like this for the connection to your MQTT broker:
     const char *mqtt_password = "****";   // MQTT password for authentication
     const int mqtt_port = ******;         // MQTT port (TCP)
 
-It is also needed to define these two global variables:
+It is also needed to define these two global variables -please personalize them in some way, so that we dont all have the same name, e.g. espClientGroupName:
 
     WiFiClient espClient;
     PubSubClient mqtt_client(espClient);
