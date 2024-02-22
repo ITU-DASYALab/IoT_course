@@ -19,7 +19,7 @@ First we need to install and include two packages:
     #include <WiFi.h>
     #include <PubSubClient.h>
 
-We already have the WiFi package from the board manager and our T-Beam board. 
+We already have the WiFi package from the board manager and our T-Beam board - if not, install it (ESP32WiFi).
 However, in order to be able to use the PubSubClient we need to install the "PubSubClient" library by Nick O'Leary. 
 You can find this using the library manager as you did in previous exercises. 
 If interested, you can read more about the library [here](https://github.com/knolleary/pubsubclient) (might be useful if there is something in the code you are unsure what means).
@@ -39,6 +39,10 @@ And something like this for the connection to your MQTT broker:
     const char *mqtt_username = "****";   // MQTT username for authentication
     const char *mqtt_password = "****";   // MQTT password for authentication
     const int mqtt_port = ******;         // MQTT port (TCP)
+
+For our current exercise, the settings are here:
+
+https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2024_exercise_04_settings.md
 
 It is also needed to define these two global variables:
 
