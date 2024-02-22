@@ -40,6 +40,10 @@ And something like this for the connection to your MQTT broker:
     const char *mqtt_password = "****";   // MQTT password for authentication
     const int mqtt_port = ******;         // MQTT port (TCP)
 
+For our current exercise, the settings are here:
+
+https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2024_exercise_04_settings.md
+
 It is also needed to define these two global variables:
 
     WiFiClient espClient;
