@@ -1,4 +1,4 @@
-For Wi-Fi and MQTT connections, you need:
+For Wi-Fi and MQTT connections, you need ...
 
 
 ```
