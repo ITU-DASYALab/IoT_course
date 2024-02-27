@@ -32,8 +32,22 @@ Easter Holiday
 | 10    | Apr 11   |   Security |S, Alessandro Bruni ?| - |
 | 11     | Apr 18     |   Industry Guest Talk | tba. - ideas: IBM, trifork, onomondo, force, cibicom   |
 | 12   | Apr 25      | IoT & Ethics | Irina?    | ?? |
-| 14   | May 01  |    Space IoT- Satellites and more | J, S | |
+| 14   | May 01  |    Space IoT- Satellites and more | J, S | hand out exam |
 
 
+## Exams
 
+Give out exam: 1.5. 2024 - latest 7.5.2024
+
+w22 	Tuesday 28.05.2024 	
+
+	08:00 - 14:00 	Sebastian Büttrich 	learnIT 	CS - 1st year 	Ordinary Exam - submission
+ 
+w25 	Thursday 20.06.2024 	
+
+	09:00 - 21:00 	Sebastian Büttrich 	3A52 	CS - 1st year 	Ordinary Exam
+ 
+  	Friday 21.06.2024 	
+   
+	09:00 - 21:00 	Sebastian Büttrich 	3A52 	CS - 1st year 	Ordinary Exam
 
