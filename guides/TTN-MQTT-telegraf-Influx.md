@@ -43,10 +43,9 @@ mosquitto_sub -h eu1.cloud.thethings.network -p 1883 -t "#" -u "dasya-co2-001@tt
 
 
 or specifically for the lab sensor (DevID eui-70b3d54990564b35)
-``
+```
 mosquitto_sub -h eu1.cloud.thethings.network -p 1883 -t "	" -u "	" -P "NNSXS.NFBMRAJAH2NAT32PK626N44JNPPYUOKWUPRTEYA.RYINDYX7ZTL2XL54VK5RFVGYCK73IGIJKZJUQ3IOGI5GQOSNG3WA"
-``
-
+```
 ## telegraf
 
 Use web GUI to make a telegraf config for an mqtt consumer
@@ -56,7 +55,7 @@ telegraf --config http://influx.itu.dk:8086/api/v2/telegrafs/0ca6c4661e41d000
 ```
 
 the MQTT part looks like this
-
+```
 [[inputs.mqtt_consumer]]
 
   servers = ["tcp://eu1.cloud.thethings.network:1883"]
@@ -68,6 +67,7 @@ the MQTT part looks like this
   password = "NNSXS.NFBMRAJAH2NAT32PK626N44JNPPYUOKWUPRTEYA.RYINDYX7ZTL2XL54VK5RFVGYCK73IGIJKZJUQ3IOGI5GQOSNG3WA"
   
   data_format = "json"
+```
 
 
 
