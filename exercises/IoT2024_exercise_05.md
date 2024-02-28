@@ -21,11 +21,13 @@ There are a few short steps we need to do before we are able to connect to The T
     - LoraWAN version: 1.0.1
     - Paste in your Device EUI - which you know from where?
       - The DevEUI is the globally unique identifier of a LoRaWAN® device - at least in theory, much like a MAC address. But, TTGO boards (which includes T-Beam) do not come with factory provided DevEUI and DevAddr. One good way of generating you DevEUI in this case, to keep the DevEUI somewhat unique, is
-```
-Take your MAC address
-Put a FFFE in the middle (as the MAC is 48bit and the DevEUI needs to be 64 bit)
-Like so:  MAC = D4:D4:DA:5C:DF:94 ==> DevEUI = D4:D4:DA:FF:FE:5C:DF:94
-```
+
+    - Take your MAC address
+    - Put a FFFE in the middle (as the MAC is 48bit and the DevEUI needs to be 64 bit)
+    - Like so:  MAC = D4:D4:DA:5C:DF:94 ==> DevEUI = D4:D4:DA:FF:FE:5C:DF:94
+  
+Next,
+
     - Fill the APP_EUI with 0s 
       - IN real life, this would often be provided by a vendor, or network operator
     - Genereate an APP_KEY
