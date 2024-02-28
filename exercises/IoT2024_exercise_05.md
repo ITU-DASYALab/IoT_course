@@ -51,6 +51,7 @@ Next,
             .dio = {26, 33, 32},
           };
 5. When deciding on the payload of the request you send, remember to consider how to format it later. We will discuss this in detail.
+   This guide on packing data into bytes is extremely helpful: [TTN - Working with bytes](https://www.thethingsnetwork.org/docs/devices/bytes/)
 
 #### Add a payload decoder
 
