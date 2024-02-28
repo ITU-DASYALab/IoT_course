@@ -27,11 +27,11 @@ There are a few short steps we need to do before we are able to connect to The T
     - Like so:  MAC = D4:D4:DA:5C:DF:94 ==> DevEUI = D4:D4:DA:FF:FE:5C:DF:94
   
 Next,
-
-    - Fill the APP_EUI with 0s 
-      - IN real life, this would often be provided by a vendor, or network operator
-    - Genereate an APP_KEY
-    - Make up a device ID that you can recognize, e.g. "IoT2024-GroupNumberOrName"
+  - Fill the APP_EUI with 0s 
+  - IN real life, this would often be provided by a vendor, or network operator
+  - Genereate an APP_KEY
+  - Make up a device ID that you can recognize, e.g. "IoT2024-GroupNumberOrName"
+    
 4. Type 0's as your 'JoinEUI', and let the console generate  an AppKey for you
 
 #### Connect your board to The Things Network
