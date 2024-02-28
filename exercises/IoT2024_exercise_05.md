@@ -25,7 +25,9 @@ There are a few short steps we need to do before we are able to connect to The T
     - Take your MAC address
     - Put a FFFE in the middle (as the MAC is 48bit and the DevEUI needs to be 64 bit)
     - Like so:  MAC = D4:D4:DA:5C:DF:94 ==> DevEUI = D4:D4:DA:FF:FE:5C:DF:94
-  
+
+(The terms "little endian" and LSB, "big endian" and MSB might need some explaining - you need to understand them to get the settings right in your code.)
+
 Next,
   - Fill the APP_EUI with 0s 
   - IN real life, this would often be provided by a vendor, or network operator
