@@ -20,21 +20,15 @@ There are a few short steps we need to do before we are able to connect to The T
     - Freqency plan: Europe 863-870 MHz (SF9 for RX2 - recommended)
     - LoraWAN version: 1.0.1
     - Paste in your Device EUI - which you know from where?
-      - The DevEUI is the globally unique identifier of a LoRaWAN® device - at least in theory, much like a MAC address. But, TTGO boards (which includes T-Beam) do not come with factory provided DevEUI and DevAddr. One good way of generating you DevEUI in this case, to keep the DevEUI somewhat unique, is
-
-    - Take your MAC address
-    - Put a FFFE in the middle (as the MAC is 48bit and the DevEUI needs to be 64 bit)
-    - Like so:  MAC = D4:D4:DA:5C:DF:94 ==> DevEUI = D4:D4:DA:FF:FE:5C:DF:94
-
-(The terms "little endian" and LSB, "big endian" and MSB might need some explaining - you need to understand them to get the settings right in your code.)
-
-Next,
-  - Fill the APP_EUI with 0s 
-  - IN real life, this would often be provided by a vendor, or network operator
-  - Genereate an APP_KEY
-  - Make up a device ID that you can recognize, e.g. "IoT2024-GroupNumberOrName"
-    
-4. Type 0's as your 'JoinEUI', and let the console generate  an AppKey for you
+      - The DevEUI is the globally unique identifier of a LoRaWAN® device - at least in theory, much like a MAC address. But, TTGO boards (which includes T-Beam) do not come with factory provided DevEUI and DevAddr. One good way of generating you DevEUI in this case, to keep the DevEUI somewhat unique, is:
+        - Take your MAC address
+        - Put a FFFE in the middle (as the MAC is 48bit and the DevEUI needs to be 64 bit)
+        - Like so:  MAC = D4:D4:DA:5C:DF:94 ==> DevEUI = D4:D4:DA:FF:FE:5C:DF:94
+        - (The terms "little endian" and LSB, "big endian" and MSB might need some explaining - you need to understand them to get the settings right in your code.)
+4. Fill the APP_EUI with 0s 
+    - In real life, this would often be provided by a vendor, or network operator
+5. Genereate an APP_KEY
+6. Make up a device ID that you can recognize, e.g. "IoT2024-GroupNumberOrName"
 
 #### Connect your board to The Things Network
 
@@ -53,7 +47,8 @@ Next,
             .dio = {26, 33, 32},
           };
 5. When deciding on the payload of the request you send, remember to consider how to format it later. We will discuss this in detail.
-   This guide on packing data into bytes is extremely helpful: [TTN - Working with bytes](https://www.thethingsnetwork.org/docs/devices/bytes/)
+  - This guide on packing data into bytes is extremely helpful: [TTN - Working with bytes](https://www.thethingsnetwork.org/docs/devices/bytes/)
+  - An working example connecting to the TTN and also publish some fake data can be found under LoRaWAN_examples/main.ino
 
 #### Add a payload decoder
 
@@ -63,21 +58,7 @@ Now go back to your browser and the TTN console:
 
 2. Add a decoding script to allow TTN to read the data you just sent. Here is an example of such for co2, temp and humidity data.
 Look at the way that the sensor readings have been packed into bytes - does it make sense? If not, let s talk about it.
-
-        function decodeUplink(input) {
-          co2 = (input.bytes[0] << 8) + input.bytes[1]
-          temp = (input.bytes[2] / 2.0) - 64.0
-          relh = input.bytes[3] / 2
-          return {
-            data: {
-              co2: co2,
-              temperature: temp,
-              humidity: relh
-            },
-            warnings: [],
-            errors: []
-          };
-        }
+An working example can be found under lorawan_examples/payload_decoder.js.
   
 3. You can also add an MQTT integration already now. Please refer to this guide: https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/TTN-MQTT-telegraf-Influx.md
 
