@@ -44,7 +44,8 @@ mosquitto_sub -h eu1.cloud.thethings.network -p 1883 -t "#" -u "dasya-co2-001@tt
 
 or specifically for the lab sensor (DevID eui-70b3d54990564b35)
 ```
-mosquitto_sub -h eu1.cloud.thethings.network -p 1883 -t "	" -u "	" -P "NNSXS.NFBMRAJAH2NAT32PK626N44JNPPYUOKWUPRTEYA.RYINDYX7ZTL2XL54VK5RFVGYCK73IGIJKZJUQ3IOGI5GQOSNG3WA"
+mosquitto_sub -h eu1.cloud.thethings.network -p 1883 -t "v3/dasya-co2-001@ttn/devices/eui-70b3d54990564b35/up" -u "dasya-co2-001@ttn" -P "NNSXS.NFBMRAJAH2NAT32PK626N44JNPPYUOKWUPRTEYA.RYINDYX7ZTL2XL54VK5RFVGYCK73IGIJKZJUQ3IOGI5GQOSNG3WA"
+
 
 
 
