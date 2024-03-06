@@ -16,7 +16,7 @@ That also mean that the way they store and describe data is different. The main 
 
 ## InfluxDB & TTN connection
 
-In the attached code (ttn-influx-db.py), I have added an example Python script that connects to TTN and InfluxDB.
+In the attached code ([ttn-influx-db.py](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/ttn_code_examples/ttn-influx-db.py) - which you can find [here](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/ttn_code_examples/ttn-influx-db.py)), I have added an example Python script that connects to TTN and InfluxDB.
 This script utilizes the MQTT broker that TTN provides.
 In the script, we connect to this MQTT broker, listen to any **UP**-events (which are the measurements that we send over LoRa to our end-node), and writes these to the database.
 In a "production"-environment, such a script would probably run all the time on some VM. 
