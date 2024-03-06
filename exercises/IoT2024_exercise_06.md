@@ -3,7 +3,7 @@
 
 ### Goal for the day
 
-  * Send temperature data using LoRa to the The Things Network (TTN)
+  * Send CO2, temperature and humidity data using LoRa to the The Things Network (TTN)
   * Listen to TTN's MQTT broker and save data in InfluxDB using Python
   * Visualized the data saved in InfluxDB in Grafana
 
