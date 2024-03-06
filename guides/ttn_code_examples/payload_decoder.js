@@ -1,3 +1,5 @@
+// Acknowledgement/source: https://github.com/kizniche/ttgo-tbeam-sensor-node-bme280
+
 function Decoder(bytes, port) {
     // Decode an uplink message from a buffer
     // (array) of bytes to an object of fields.
@@ -5,13 +7,13 @@ function Decoder(bytes, port) {
 
     // Humidity
     var rawHum = bytes[0] + bytes[1] * 256;
-    decoded.humidity = sflt162f(rawHum) * 100;
+    decoded.humidity = Math.round(sflt162f(rawHum) * 100 * 100) / 100;
     // Pressure
-    var rawPress = bytes[2] + bytes[3] * 256;
-    decoded.co2 = sflt162f(rawPress) * 100;
+    var rawCo2 = bytes[2] + bytes[3] * 256;
+    decoded.co2 = Math.round(sflt162f(rawCo2) * 100 * 100) / 10
     // Temperature
     var rawTemp = bytes[4] + bytes[5] * 256;
-    decoded.temperature = sflt162f(rawTemp) * 100;
+    decoded.temperature = Math.round(sflt162f(rawTemp) * 100 * 100) / 100
 
     return decoded;
 }

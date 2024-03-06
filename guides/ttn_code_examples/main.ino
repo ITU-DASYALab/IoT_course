@@ -37,6 +37,14 @@
 #include <lmic.h>
 #include <hal/hal.h>
 #include <SPI.h>
+#include <Arduino.h>
+#include <SensirionI2cScd30.h>
+#include <Wire.h>
+
+SensirionI2cScd30 sensor;
+
+static char errorMessage[128];
+static int16_t error;
 
 //
 // For normal use, we require that you edit the sketch to replace FILLMEIN
@@ -60,13 +68,13 @@ static const u1_t PROGMEM APPEUI[8]={ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
 
 // This should also be in little endian format, see above.
-static const u1_t PROGMEM DEVEUI[8]={ 0xC7, 0x56, 0x06, 0xD0, 0x7E, 0xD5, 0xB3, 0x70 };
+static const u1_t PROGMEM DEVEUI[8]={ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
 
 // This key should be in big endian format (or, since it is not really a
 // number but a block of memory, endianness does not really apply). In
 // practice, a key taken from ttnctl can be copied as-is.
-static const u1_t PROGMEM APPKEY[16] = { 0x35, 0xBB, 0xFB, 0x55, 0x4E, 0x1E, 0x64, 0x33, 0x31, 0xE7, 0x0C, 0x1E, 0xA6, 0x1A, 0x55, 0x2B };
+static const u1_t PROGMEM APPKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
 
 char bme_char[32];
@@ -74,7 +82,7 @@ static osjob_t sendjob;
 
 // Schedule TX every this many seconds (might become longer due to duty
 // cycle limitations).
-const unsigned TX_INTERVAL = 120;
+const unsigned TX_INTERVAL = 60;
 
 // Pin mapping
 const lmic_pinmap lmic_pins = {
@@ -220,14 +228,27 @@ void do_send(osjob_t* j){
         Serial.println(F("OP_TXRXPEND, not sending"));
     } else {
 
+      float co2Concentration = 0.0;
+      float temperature = 0.0;
+      float humidity = 0.0;
+
+      delay(1500);
+      error = sensor.blockingReadMeasurementData(co2Concentration, temperature,
+                                               humidity);
+      if (error != NO_ERROR) {
+        Serial.print("Error trying to execute blockingReadMeasurementData(): ");
+        errorToString(error, errorMessage, sizeof errorMessage);
+        Serial.println(errorMessage);
+        return;
+      }
+
       char buffer[40];
 
       //
       // Humidity
       //
 
-      float humidity = 33.40;
-
+      Serial.println(humidity);
       // adjust for the f2sflt16 range (-1 to 1)
       humidity = humidity / 100;
 
@@ -246,13 +267,12 @@ void do_send(osjob_t* j){
       // CO2
       //
 
-      float co2 = 30.0;
-
+      Serial.println(co2Concentration);
       // adjust for the f2sflt16 range (-1 to 1)
-      co2 = co2 / 100;
+      co2Concentration = co2Concentration / 10;
 
       // float -> int
-      uint16_t payloadPress = LMIC_f2sflt16(co2);
+      uint16_t payloadPress = LMIC_f2sflt16(co2Concentration);
 
       // int -> bytes
       byte co2Low = lowByte(payloadPress);
@@ -266,8 +286,7 @@ void do_send(osjob_t* j){
       // Temperature
       //
 
-      float temperature = 32.0;
-
+      Serial.println(temperature);
       // adjust for the f2sflt16 range (-1 to 1)
       temperature = temperature / 100;
 
@@ -280,8 +299,10 @@ void do_send(osjob_t* j){
 
       txBuffer[4] = tempLow;
       txBuffer[5] = tempHigh;
-        LMIC_setTxData2(1, txBuffer, sizeof(txBuffer), 0);
-        Serial.println(F("Packet queued"));
+      LMIC_setTxData2(1, txBuffer, sizeof(txBuffer), 0);
+      int count = sizeof(txBuffer) / sizeof(txBuffer[0]);
+      Serial.write(txBuffer, sizeof(txBuffer));
+      Serial.println(F("Packet queued"));
     }
     // Next TX is scheduled after TX_COMPLETE event.
 }
@@ -289,6 +310,30 @@ void do_send(osjob_t* j){
 void setup() {
     Serial.begin(9600);
     Serial.println(F("Starting"));
+
+    // Temperature sensor setup
+    Wire.begin();
+    sensor.begin(Wire, SCD30_I2C_ADDR_61);
+
+    sensor.stopPeriodicMeasurement();
+    sensor.softReset();
+    delay(2000);
+    uint8_t major = 0;
+    uint8_t minor = 0;
+    error = sensor.readFirmwareVersion(major, minor);
+    if (error != NO_ERROR) {
+        Serial.print("Error trying to execute readFirmwareVersion(): ");
+        errorToString(error, errorMessage, sizeof errorMessage);
+        Serial.println(errorMessage);
+        return;
+    }
+    error = sensor.startPeriodicMeasurement(0);
+    if (error != NO_ERROR) {
+        Serial.print("Error trying to execute startPeriodicMeasurement(): ");
+        errorToString(error, errorMessage, sizeof errorMessage);
+        Serial.println(errorMessage);
+        return;
+    }
 
     #ifdef VCC_ENABLE
     // For Pinoccio Scout boards
