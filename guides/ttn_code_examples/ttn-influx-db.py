@@ -12,7 +12,8 @@ TTN_USER = "<redacted>"
 TTN_PASS = "<redacted>"
 ttn_client = Client(mqtt.CallbackAPIVersion.VERSION2)
 
-INFLUX_TOKEN = "<redacted>"
+INFLUX_TOKEN = "anitXk8MLWjomML-hBh6XmgKbjtXAxURFQSdiZS8enfPwdeyddKuOfJuo89ZW0XySuwcZDOz_IX_9nyM9yml3w=="
+
 INFLUX_ORG = "iot2024"
 INFLUX_URL = "http://influx.itu.dk:8086"
 INFLUX_BUCKET = "iot2024_final"
