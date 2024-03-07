@@ -40,24 +40,26 @@ def on_ttn_connect(client, _userdata, _flags, return_code, _properties):
 def on_ttn_message(client, userdata, msg):
     message = json.loads(msg.payload)
 
-    decoded_co2 = message["uplink_message"]["decoded_payload"].get("co2")
-    decoded_humidity = message["uplink_message"]["decoded_payload"].get("humidity")
-    decoded_temperature = message["uplink_message"]["decoded_payload"].get("temperature")
-    print(decoded_co2, decoded_humidity, decoded_temperature)
-    # we recieve and read the relevant information into tags and fields
-    # please replace with your name!
-    point = Point(measurement_name) \
-        .tag("device_id", message["end_device_ids"]["device_id"]) \
-        .tag("dev_eui", message["end_device_ids"]["dev_eui"]) \
-        .tag("app_eui", message["end_device_ids"]["join_eui"]) \
-        .tag("port", int(message["uplink_message"]["f_port"])) \
-        .field("co2", decoded_co2) \
-        .field("humidity", decoded_humidity) \
-        .field("temperature", decoded_temperature) \
-        .time(message["received_at"])  # Fix the timestamp to be the TTN received time
-        
-    print(point)
-    write_api.write(bucket=INFLUX_BUCKET, org=INFLUX_ORG, record=point)
+    if "decoded_payload" in message["uplink_message"].keys():
+
+        decoded_co2 = message["uplink_message"]["decoded_payload"].get("co2")
+        decoded_humidity = message["uplink_message"]["decoded_payload"].get("humidity")
+        decoded_temperature = message["uplink_message"]["decoded_payload"].get("temperature")
+        print(decoded_co2, decoded_humidity, decoded_temperature)
+        # we recieve and read the relevant information into tags and fields
+        # please replace with your name!
+        point = Point(measurement_name) \
+            .tag("device_id", message["end_device_ids"]["device_id"]) \
+            .tag("dev_eui", message["end_device_ids"]["dev_eui"]) \
+            .tag("app_eui", message["end_device_ids"]["join_eui"]) \
+            .tag("port", int(message["uplink_message"]["f_port"])) \
+            .field("co2", decoded_co2) \
+            .field("humidity", decoded_humidity) \
+            .field("temperature", decoded_temperature) \
+            .time(message["received_at"])  # Fix the timestamp to be the TTN received time
+            
+        print(point)
+        write_api.write(bucket=INFLUX_BUCKET, org=INFLUX_ORG, record=point)
 
 
 # set up iot client for TTN
