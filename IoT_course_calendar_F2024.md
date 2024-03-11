@@ -29,9 +29,9 @@ Changes compared to 2023:
 | 8     | Mar 21     |  Energy |S |  |
 Easter Holiday
 | 9     | Apr 04  |   Edge computing & TinyML| S, R, J | end Assignment 1, handout Assignment 2 |
-| 10    | Apr 11   |   Security |S, Alessandro Bruni ?| - |
-| 11     | Apr 18     |   Industry Guest Talk | tba. - ideas: IBM, trifork, onomondo, force, cibicom   |
-| 12   | Apr 25      | IoT & Ethics | Irina?    | ?? |
+| 10    | Apr 11   |   Security |S| - |
+| 11   | Apr 18      | IoT & Ethics | Irina video + S    | ?? |
+| 12    | Apr 25    |   Industry Guest Talk | 9-10 ______? 10-12 Arduino |
 | 14   | May 01  |    Space IoT- Satellites and more | J, S | hand out exam |
 
 
