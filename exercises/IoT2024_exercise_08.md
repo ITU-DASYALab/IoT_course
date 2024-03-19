@@ -11,21 +11,21 @@ you may see this as a checklist for self-evaluation, but also a memo list for po
 ### Physical assembly
 
 We have throughout the semester connected a sensor to our board.
-However there are several other possibilities for connections to the board.
+However, there are several other possibilities for connections to the board.
 The [pinmap](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/assets/image/t-beam_v1.1_pinmap.jpg) is a good place to get started to get an overview of the board, and which pins it is possible to connect to.
 
-Remember that we also have used a breadboard for making the process of connecting sensor and other equipment to our board.
+Remember that we also have used a breadboard for the process of connecting sensors and other equipment to our board.
 If you need to refresh your memory on how the breadboard works, take a look [here](https://wiring.org.co/learning/tutorials/breadboard/).
 
 ### Antenna 
 
-We have looked into how the atenna is connected to the board, as well as we have create pinmappings to ensure that we connect to the antenna in a way that our programs can use.
-See an example of such an pinmapping on [this line in the example code](https://github.com/ITU-DASYALab/IoT_course/blob/85be575ee369b2f1460cdbfc0f8e66532cdc210a/guides/ttn_code_examples/main.ino#L88).
+We have looked into how the antenna is connected to the board, as well as we have created pin mappings to ensure that we connect to the antenna in a way that our programs can use.
+See an example of such a pin mapping on [this line in the example code](https://github.com/ITU-DASYALab/IoT_course/blob/85be575ee369b2f1460cdbfc0f8e66532cdc210a/guides/ttn_code_examples/main.ino#L88).
 
 ### Serial USB
 
-Some students using Mac's had issues to connect their boards via Serial USB because of the way that their drivers worked. 
-Please refer to [this](https://github.com/espressif/esptool/issues/280) GitHub-issue for more information about a driver that solves this issue (the webpage for the driver that fix the issue is in Chinese, but it seems to be possible to understand how to download/install it using Google Translate).
+Some students using Macs had issues connecting their boards via Serial USB because of the way that their drivers worked. 
+Please refer to [this](https://github.com/espressif/esptool/issues/280) GitHub-issue for more information about a driver that solves this issue (the webpage for the driver that fixes the issue is in Chinese, but it seems to be possible to understand how to download/install it using Google Translate).
 
 ### Arduino IDE
 
@@ -44,7 +44,7 @@ For a tutorial on how this is done, please refer to this [tutorial](https://gith
 
 We used the I2C bus to communicate with our sensor. 
 [Here](https://learn.sparkfun.com/tutorials/i2c/all) you can find more information about how it works.
-Also, here is a simple [I2C scanner](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/I2C_scanner.md) to show you what I2C devices there are connected on your board, which is useful for troubleshooting I2C.
+Also, here is a simple [I2C scanner](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/I2C_scanner.md) to show you what I2C devices there are connected to your board, which is useful for troubleshooting I2C.
 
 ## Networking
 
@@ -79,15 +79,15 @@ The content of this file should be:
         #define CFG_sx1276_radio 1
         //#define LMIC_USE_INTERRUPTS
         #define hal_init LMICHAL_init
-    Where the last line is the most important one, as it overwrites a commonly used variable in many libraries, which can result in you programs not being able to run.
-    We alsp change the frequency from the standard one (US) to an European one.
+    Where the last line is the most important one, as it overwrites a commonly used variable in many libraries, which can result in your programs not being able to run.
+    We also change the frequency from the standard one (US) to a European one.
 
 ## MQTT
 
-We have also used a MQTT broker.
-The case which is most important from exercises is the one provided by the Things Network (TTN).
+We have also used an MQTT broker.
+The case that is most important from exercises is the one provided by the Things Network (TTN).
 This broker allows you to listen to "up"-events to an application on TTN.
-A explanation how this is used in our "setup" can be found in [this guide](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/TTN-MQTT-telegraf-Influx.md). (Note that we use a Python-script for listening for up-events and writing them to a database.
+An explanation of how this is used in our "setup" can be found in [this guide](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/TTN-MQTT-telegraf-Influx.md). (Note that we use a Python script for listening for up-events and writing them to a database.
 This can be done in several ways, this is just a simple approach to easily illustrate how a full setup can be done).
 
 ## Payload formats
@@ -100,7 +100,7 @@ This can be done in several ways, this is just a simple approach to easily illus
 
 ## LoRaWan stack
 
-For our exercises, the LoRaWAN stack we have used is the The Things Network (TTN).
+For our exercises, the LoRaWAN stack we have used is The Things Network (TTN).
 A guide to using TTN can be found in [exercise 05](https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2024_exercise_05.md).
 
 Some important keywords are:
