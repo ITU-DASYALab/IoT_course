@@ -160,6 +160,15 @@ Yin, L., Fang, B., Guo, Y., Sun, Z., & Tian, Z. (2020). Hierarchically defining 
 
 ## Energy
 
+Monserrate, S. G. (2022). The cloud is material: On the environmental impacts of computation and data storage.
+https://mit-serc.pubpub.org/pub/the-cloud-is-material/release/1
+
+T.Pinson et al., Assessing the embodied carbon footprint of IoT edge devices with a bottom-up life-cycle approach, Journal of Cleaner Production, 2021.
+
+Prakash, S., Stewart, M., Banbury, C., Mazumder, M., Warden, P., Plancher, B., & Reddi, V. J. (2023). Is TinyML Sustainable?. Communications of the ACM, 66(11), 68-77.
+
+Couronné, S., Vera, C. R., Molina, B., Huang, L., Karagiannis, G., Poggiali, F., ... & Pintilie, T. (2023). IoT and Edge Computing Carbon Footprint Measurement Methodology.
+
 Wang, K., Wang, Y., Sun, Y., Guo, S., & Wu, J. (2016). Green industrial Internet of Things architecture: An energy-efficient perspective. IEEE Communications Magazine, 54(12), 48-54.
 https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7785890
 
