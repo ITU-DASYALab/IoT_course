@@ -37,7 +37,7 @@ For a comprehensive guide to the Arduino IDE, please refer to [this guide](https
 
 ### Cabling
 
-We connected the SCD30 together with our board. 
+We connected the SCD30 with our board. 
 For a tutorial on how this is done, please refer to this [tutorial](https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2024_exercise_03.md).
 
 ### I2C bus
@@ -82,24 +82,22 @@ The content of this file should be:
     Where the last line is the most important one, as it overwrites a commonly used variable in many libraries, which can result in your programs not being able to run.
     We also change the frequency from the standard one (US) to a European one.
 
-## MQTT
-
-We have also used an MQTT broker.
-The case that is most important from exercises is the one provided by the Things Network (TTN).
-This broker allows you to listen to "up"-events to an application on TTN.
-An explanation of how this is used in our "setup" can be found in [this guide](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/TTN-MQTT-telegraf-Influx.md). (Note that we use a Python script for listening for up-events and writing them to a database.
-This can be done in several ways, this is just a simple approach to easily illustrate how a full setup can be done).
-
 ## Payload formats
+
+When working with IoT, we often have to compromise between bandwidth and the accuracy of what we want to transmit:
 
 ### Minimization
 
-How many digits make sense? How many bytes to use?
+An example of minimization can be seen in [exercise 05](https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2024_exercise_05.md) where we first transmit data over LoRa.
+Does it make sense to transmit the whole measurement?
+Sometimes we can get measurements with decimals that are more accurate than what the sensor can provide.
+Therefore we can skip some decimals to minimize the data that we transmit.
 
 ### Encoding / Bits and bytes
 
-From float number to HEX bytes and base64
-
+We have seen several times throughout the exercises encoded float numbers into both HEX bytes and base64:
+- HEX bytes have an ordering of bytes that represent numbers in a way that can be sorted by largest or smallest byte (big-endian or little-endian)
+- Base64 can be used for transmission over text-based protocols but can increase data size.
 
 
 ## LoRaWan stack
@@ -119,33 +117,45 @@ Some important keywords are:
 
 ## Data Integration
 
-How to get data from application server to data storage and analysis
-
-(we
+How to get data from the application server to data storage and analysis:
 
 #### MQTT 
 
-Same as before? almost - now we are using it to subscribe to TTN MQTT 
+We have used an MQTT broker.
+The case that is most important from exercises is the one provided by the Things Network (TTN).
 
 #### Webhooks
 
-The possibility of using any custom receiver script and pointing at it via URL
+Using the MQTT broker, we can listen to "up"-events to an application on TTN.
+As can be seen in [this guide](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/TTN-MQTT-telegraf-Influx.md) we use [this script](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/ttn_code_examples/ttn-influx-db.py) to do this.
+This script also stores all of the "up"-events in an InfluxDB bucket.
+Note that we use a Python script for listening to a webhook.
+Another alternative can be [Node-RED](https://nodered.org/).
 
 ## Timeseries Database
 
 ### InfluxDB
 
-How do i write to InfluxDB?
+When working with InfluxDB some things are different from how we usually work with databases.
+We write to a bucket instead of a database, and each of the entries we make are called points.
+These differences between are traditional relative databases work, and how a time series database like InfluxDB works.
+If you [in the script we used to store data we sent over TTN](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/ttn_code_examples/ttn-influx-db.py) you can see an example of how we can write to an InfluxDB database.
 
-python script
-telegraf (Sebastian will actually set this up during exercise and test)
+- Python script
+telegraf (Sebastian will set this up during exercise and test)
 
 ## Data Visualization
 
+We used [Grafana](https://grafana.com/) to visualize the data that we collected:
+
 ### Connecting data sources
 
-Different options for data source - Flux, InfluxQL
+When developing different visualizations in Grafana, we had to query our InfluxDB bucket to get the data that we wanted.
+There are different ways to query an InfluxDB database:
+
+- [Flux](https://docs.influxdata.com/influxdb/cloud/query-data/flux/)
+- [InfluxQL](https://docs.influxdata.com/influxdb/v1/query_language/)
 
 ### Queries
 
-Sample queryto get all CO2 readings of today
+[Here](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/ttn_code_examples/grafana_queries.md) are some examples of queries that can be used in Grafana to get the data from the measurements that we have made earlier.
