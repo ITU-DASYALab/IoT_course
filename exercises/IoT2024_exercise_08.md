@@ -94,9 +94,13 @@ This can be done in several ways, this is just a simple approach to easily illus
 
 ### Minimization
 
-### Encoding
+How many digits make sense? How many bytes to use?
 
-### Bits and bytes
+### Encoding / Bits and bytes
+
+From float number to HEX bytes and base64
+
+
 
 ## LoRaWan stack
 
@@ -115,19 +119,33 @@ Some important keywords are:
 
 ## Data Integration
 
-### MQTT 
+How to get data from application server to data storage and analysis
 
-Same as before?
+(we
 
-### Webhooks
+#### MQTT 
+
+Same as before? almost - now we are using it to subscribe to TTN MQTT 
+
+#### Webhooks
+
+The possibility of using any custom receiver script and pointing at it via URL
 
 ## Timeseries Database
 
 ### InfluxDB
 
+How do i write to InfluxDB?
+
+python script
+telegraf (Sebastian will actually set this up during exercise and test)
 
 ## Data Visualization
 
 ### Connecting data sources
 
+Different options for data source - Flux, InfluxQL
+
 ### Queries
+
+Sample queryto get all CO2 readings of today
