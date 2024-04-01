@@ -28,7 +28,7 @@ Changes compared to 2023:
 | 7    | Mar 14    |    Data analytics: ML basics  | S, R |  |
 | 8     | Mar 21     |  Energy |S |  |
 Easter Holiday
-| 9     | Apr 04  |   Edge computing & TinyML| R (S if neeed) | end Assignment 1, handout Assignment 2 |
+| 9     | Apr 04  |   Edge computing & TinyML| R (S if needed) | end Assignment 1, handout Assignment 2 |
 | 10    | Apr 11   |   Security |S| - |
 | 11   | Apr 18      | IoT & Ethics | Irina video + S    | ?? |
 | 12    | Apr 25    |   Industry Guest Talk | 9-10 ______? 10-12 Arduino |
