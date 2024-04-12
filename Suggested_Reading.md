@@ -137,9 +137,7 @@ https://www.os3.nl/_media/info/5_osi_model.pdf
 
 ## Security
 
-LoRaWAN Networks Susceptible to Hacking: Common Cyber Security Problems, How to Detect and Prevent Them
 
-https://act-on.ioactive.com/acton/attachment/34793/f-87b45f5f-f181-44fc-82a8-8e53c501dc4e/1/-/-/-/-/LoRaWAN%20Networks%20Susceptible%20to%20Hacking.pdf
 
 Ferrara, P., Mandal, A. K., Cortesi, A., & Spoto, F. (2020). Static analysis for discovering IoT vulnerabilities. International Journal on Software Tools for Technology Transfer, 1-18
 https://link.springer.com/article/10.1007/s10009-020-00592-x
@@ -149,14 +147,20 @@ https://ieeexplore.ieee.org/abstract/document/8688434
 
 Yin, L., Fang, B., Guo, Y., Sun, Z., & Tian, Z. (2020). Hierarchically defining Internet of Things security: From CIA to CACA. International Journal of Distributed Sensor Networks, 16(1), 1550147719899374.
 
- Additional reading on security, suggested Philippe Bonnet - Thursday, 13 April 2023:
   	
-    Useful documents related to IoT security: https://www.enisa.europa.eu/news/enisa-news/iot-security-enisa-publishes-guidelines-on-securing-the-iot-supply-chain
+Useful documents related to IoT security: https://www.enisa.europa.eu/news/enisa-news/iot-security-enisa-publishes-guidelines-on-securing-the-iot-supply-chain
+ENISA Baseline Security Recommendations for IoT: https://www.enisa.europa.eu/publications/baseline-security-recommendations-for-iot/@@download/fullReport
     
-    OWASP IoT Top 10: https://wiki.owasp.org/index.php/OWASP_Internet_of_Things_Project
+OWASP IoT Top 10: https://wiki.owasp.org/index.php/OWASP_Internet_of_Things_Project
+https://owasp.org/www-pdf-archive/OWASP-IoT-Top-10-2018-final.pdf
     
-    Standards for IoT security: https://www.nist.gov/itl/applied-cybersecurity/nist-cybersecurity-iot-program
+Standards for IoT security: https://www.nist.gov/itl/applied-cybersecurity/nist-cybersecurity-iot-program
 
+LoRaWAN Networks Susceptible to Hacking: Common Cyber Security Problems, How to Detect and Prevent Them
+https://act-on.ioactive.com/acton/attachment/34793/f-87b45f5f-f181-44fc-82a8-8e53c501dc4e/1/-/-/-/-/LoRaWAN%20Networks%20Susceptible%20to%20Hacking.pdf
+
+Hessel, F., Almon, L., & Hollick, M. (2023). Lorawan security: An evolvable survey on vulnerabilities, attacks and their systematic mitigation. ACM Transactions on Sensor Networks, 18(4), 1-55.
+https://dl.acm.org/doi/pdf/10.1145/3561973
 
 ## Energy
 
