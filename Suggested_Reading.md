@@ -205,8 +205,6 @@ AI / ML / TinyML - see https://github.com/things-guide/things-guide-resources/wi
 
 ## Satellite IoT
 
-
-
 Wei, J., Han, J., & Cao, S. (2019). Satellite IoT edge intelligent computing: A research on architecture. Electronics, 8(11), 1247.
 https://www.mdpi.com/2079-9292/8/11/1247
 
@@ -224,6 +222,12 @@ https://iopscience.iop.org/article/10.3847/2041-8213/ab8016/meta
  
  Fraire, J. A., Céspedes, S., & Accettura, N. (2019, October). Direct-To-Satellite IoT-A Survey of the State of the Art and Future Research Perspectives. In International Conference on Ad-Hoc Networks and Wireless (pp. 241-258). Springer, Cham.
 https://link.springer.com/chapter/10.1007/978-3-030-31831-4_17
+
+Centenaro, M., Costa, C. E., Granelli, F., Sacchi, C., & Vangelista, L. (2021). A survey on technologies, standards and open challenges in satellite IoT. IEEE Communications Surveys & Tutorials, 23(3), 1693-1720.
+
+Ledesma, O., Lamo, P., & Fraire, J. A. (2024). Trends in LPWAN Technologies for LEO Satellite Constellations in the NewSpace Context. Electronics, 13(3), 579.
+
+Capez, G. M., Henn, S., Fraire, J. A., & Garello, R. (2022). Sparse satellite constellation design for global and regional direct-to-satellite IoT services. IEEE Transactions on Aerospace and Electronic Systems, 58(5), 3786-3801.
 
 ## Guides, Coding, Hacking
 
