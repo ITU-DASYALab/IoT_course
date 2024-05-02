@@ -10,7 +10,7 @@ You might not be able to do all of this within 2 hours,
 but here are some of the keywords for what you should be familiar with,
 and some useful links:
 
-* software: python, [Skyflied library](https://rhodesmill.org/skyfield/)
+* software: python, [Skyfield library](https://rhodesmill.org/skyfield/)
 * software for satellite orbit visualization - [gpredict](https://github.com/csete/gpredict)
 * Satellite location and movement data: [TLE](https://en.wikipedia.org/wiki/Two-line_element_set) 
 * Where to find TLE data?
