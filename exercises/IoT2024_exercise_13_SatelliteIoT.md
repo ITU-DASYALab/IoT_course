@@ -12,6 +12,7 @@ and some useful links:
 
 * software: python, [Skyfield library](https://rhodesmill.org/skyfield/)
 * software for satellite orbit visualization - [gpredict](https://github.com/csete/gpredict)
+* c code for predicting passes - [Lacuna orbit-tools](https://github.com/LacunaSpace/orbit-tools)
 * Satellite location and movement data: [TLE](https://en.wikipedia.org/wiki/Two-line_element_set) 
 * Where to find TLE data?
   * [n2yo](https://www.n2yo.com/database/?name=DISCO) e.g [DISCO1](https://www.n2yo.com/satellite/?s=56222)
