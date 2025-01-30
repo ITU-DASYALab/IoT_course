@@ -43,7 +43,7 @@ You will learn about reading/writing as a side effect.
 
 ## Working with batteries
 
-  * Necessary secuirty remarks
+  * Necessary security remarks
 
 ## Preparation for next week:
 
