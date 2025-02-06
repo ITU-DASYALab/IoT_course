@@ -20,6 +20,8 @@ We *hope* to have a unifom set of devices (V1.2) but please doublecheck!
 
 The differences will mainly become important, once we get to LoRa networking - the two boards have different LoRa chips and require different libraries!
 
+THis is a fine example for hands-on IoT dev problems ... hardware confusion :)
+
 For today we are still fine ignoring the differences (largely).
 
 
