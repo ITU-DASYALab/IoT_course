@@ -27,4 +27,4 @@ t-beam
 usb micro
 see old kit: https://github.com/ITU-DASYALab/IoT_course/blob/main/kit/kits.md
 
-
+Library link: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
