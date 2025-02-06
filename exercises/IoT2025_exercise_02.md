@@ -17,8 +17,9 @@ Below are a few valuable resources to refer to when trying to solve exercises.
 __Attention!__  The board exists in two hardware revisions - a V 1.1 and a V1.2.
 We *hope* to have a unifom set of devices (V1.2) but please doublecheck!
 
+The power-managment circuit AXP192 is replaced by an AXP2101. You need a new library for the power-managment.
 
-The differences will mainly become important, once we get to LoRa networking - the two boards have different LoRa chips and require different libraries!
+The differences will mainly become important, once we get to LoRa networking - the two boards might have different LoRa chips and require different libraries!
 
 This is a fine example for hands-on IoT dev problems ... hardware confusion :)
 
