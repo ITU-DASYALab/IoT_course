@@ -12,9 +12,15 @@
 ### Useful resources
 
 Below are a few valuable resources to refer to when trying to solve exercises.
-Attention!  The board exists in two hardware revisions - a V 1.1 and a V1.2.
+
+
+__Attention!__  The board exists in two hardware revisions - a V 1.1 and a V1.2.
 We *hope* to have a unifom set of devices (V1.2) but please doublecheck!
+
+
 The differences will mainly become important, once we get to LoRa networking - the two boards have different LoRa chips and require different libraries!
+
+For today we are still fine ignoring the differences (largely).
 
 
 **Repository holding turtorials and other helpful information directly from the LilyGo-manufactorer:** [Click here for the repository](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series?tab=readme-ov-file).
