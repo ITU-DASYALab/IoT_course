@@ -25,7 +25,7 @@ For today we are still fine ignoring the differences (largely).
 
 **Repository holding turtorials and other helpful information directly from the LilyGo-manufactorer:** [Click here for the repository](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series?tab=readme-ov-file).
 
-**Pinmap for our board:** [Click here for pinmap](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/assets/image/t-beam_v1.1_pinmap.jpg).
+**Pinmap for a V1.1 board:** [Click here for pinmap](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/assets/image/t-beam_v1.1_pinmap.jpg).
 
 ---
 
