@@ -22,12 +22,12 @@ Changes compared to 2024:
 | 1     | Jan 30 | Introduction, System Design & Architecture | S |   |
 | 2     | Feb 06     |  Embedded systems & programming  | S + R |   |
 | 3     | Feb 13    |  Sensing |S| |S | |
-| 4    | Feb 20    |   Networking I - Overview|  S  | Assignment? |
+| 4    | Feb 20    |   Networking I - Overview|  S  | |
 | 5    | Feb 27     |  Networking II - LPWAN, LoRa & LoRaWAN |S | |
 | 6     | Mar 06    | Data stacks, management and visualization |S |  |
 | 7    | Mar 13    |    Data analytics: ML basics  | S, R |  |
-| 8     | Mar 20 |   Edge computing & TinyML| R (S if needed) | end Assignment 1, handout Assignment 2 |
-| 9     | Mar 27     |  Energy |S |  |
+| 8     | Mar 20     |  Energy |S |  |
+| 9     | Mar 27     |  Edge computing & TinyML| R (S if needed) |  |
 | 10    | Apr 03   |   Security |S| - |
 | 11   | Apr 10      | IoT & Ethics | Irina video + S    | ?? |
 | -   | Apr 17      | Easter holiday
