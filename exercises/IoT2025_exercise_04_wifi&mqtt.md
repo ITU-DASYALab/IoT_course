@@ -1,6 +1,41 @@
 # Exercise week 04
 ## Hello WiFi & MQTT! - Simple WiFi-program
 
+### Before we begin, a status of where we are
+
+(and if you are not there yet - ask! we have time!)
+
+Our T-Beam boards are working and we connect through the Arduino IDE.
+
+We got the LED blinking
+
+We can scan for I2C devices:
+```
+Found address: 52 (0x34)
+Found address: 83 (0x53)
+Found address: 119 (0x77)
+```
+
+We can read sensors, e.g. for the Sparkfun Env Combo with BME280 and ENS160, each of with come with Examples (find them in the IDE menu).
+Other sensors connected over I2C work largely the same, just with other libraries.
+
+And we can combine them into one script:
+```
+Humidity: 15% Pressure: 103031 Pa Altitude: -141.1 m Temp: 28.82 C
+Air Quality Index (1-5): 2
+Total Volatile Organic Compounds: 112 ppb
+CO2 concentration: 570 ppm
+Gas Sensor Status Flag (0 - Standard, 1 - Warm up, 2 - Initial Start Up): 2
+```
+
+Critical look at sensor values?
+Altitude really -141 m ??
+Humidity?
+
+What would we do about his? (==> Calibration!)
+
+Now it's time to send measurements - we need to make a Wi-Fi connection and learn MQTT.
+
 ### Goal for the day
 
   * Familiarize yourself with the WiFi-functionality of the LilyGo-board
@@ -42,7 +77,7 @@ And something like this for the connection to your MQTT broker:
 
 For our current exercise, the settings are here:
 
-https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2024_exercise_04_settings.md
+https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/IoT2025_exercise_04_settings_wifi_mqtt.md
 
 It is also needed to define these two global variables:
 
@@ -124,11 +159,12 @@ Your task however is to define how we publish the temperature to this topic.
 Try and incoporate the example you were working on last time, and see if you are able to publish the temperature to the MQTT broker. 
 It is also up to you to consider how/when the broker should publish new temperatures to the channel:
 
+- Should we agree on a good topic organistion? and not just post all in one topic?
 - Should it look for something else being published on the channel?
 - Should it send on a given time interval?
 - Perhaps this could be done in the if (!mqtt_client.connected()) in the loop function?
 
-### Making it secure: Adding SSL
+### Optional: Making it secure: Adding SSL
 
 In order to make a connection to the MQTT broker using SSL, we need to first add a new package to our file:
 
