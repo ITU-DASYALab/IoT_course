@@ -44,8 +44,11 @@ Now it's time to send measurements - we need to make a Wi-Fi connection and lear
 
 ### The task
 
-For this exercise, we are going to utilize the temperature/CO2-sensor we hooked up to our board to send the temperature of the board to a MQTT broker. 
+For this exercise, first we are going to send test messages and then a sensor reading (e.g. temperature) to a MQTT broker. 
 MQTT is a protocol for message communication in between machines, where bandwidth often is restricted. 
+It is not super low bandwidth though! Typically you find it in the data backend rather than in edge devices/nodes.
+Why not in the nodes? Discuss! 
+
 A good source for more information about MQTT and MQTT brokers can be found [here](https://aws.amazon.com/what-is/mqtt/).
 
 
