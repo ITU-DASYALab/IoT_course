@@ -159,6 +159,7 @@ Your task however is to define how we publish the temperature to this topic.
 Try and incoporate the example you were working on last time, and see if you are able to publish the temperature to the MQTT broker. 
 It is also up to you to consider how/when the broker should publish new temperatures to the channel:
 
+
 - Should we agree on a good topic organistion? and not just post all in one topic?
 - Should it look for something else being published on the channel?
 - Should it send on a given time interval?
