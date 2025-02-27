@@ -91,7 +91,7 @@ Learn how to monitor the join process - both on the serial terminal and on the w
 
 It is time to look at how we are sending our sensor data. As long as we were on Wi-Fi and had plenty of bandwidth, and time-on-air did not matter, all was easy:
 We could send things like:
-``
+``` 
  {
     "temperature": 25.43,
     "humidity": 25.82
