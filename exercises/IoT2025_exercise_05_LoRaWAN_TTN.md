@@ -108,6 +108,7 @@ The receiving side will know which is which (how?).
 
 #### Add a payload decoder
 
+
 Now go back to your browser and the TTN console:
 
 1. Confirm that you get some data arriving in the TTN console
@@ -121,3 +122,35 @@ An working example can be found under lorawan_examples/payload_decoder.js.
 ### Acknowledgements
 
 This exercise is heavily inspired by the work of previous TA's: https://github.com/ITU-DASYALab/IoT_course/blob/main/exercises/archive_2022/exercise-05-networking2.md
+
+
+#### Appendix: TTN connection info
+
+```
+iot2025-sebastian
+
+Frequency plan
+Europe 863-870 MHz (SF9 for RX2 - recommended)
+
+LoRaWAN version
+LoRaWAN Specification 1.0.1
+
+Regional Parameters version
+TS001 Technical Specification 1.0.1
+
+If you d like to join sebastian's course app:
+
+iot2025-sebastian
+
+AppEUI
+CAFFEEBABE202505
+
+in code:
+static const u1_t PROGMEM APPEUI[8]={ 0x05, 0x25, 0x20, 0xBE, 0xBA, 0xEE, 0xFF, 0xCA };
+
+A4B44F330E43D180405706AD6A936D03
+
+in code:
+static const u1_t PROGMEM APPKEY[16] = { 0xA4, 0xB4, 0x4F, 0x33, 0x0E, 0x43, 0xD1, 0x80, 0x40, 0x57, 0x06, 0xAD, 0x6A, 0x93, 0x6D, 0x03 };
+
+```
