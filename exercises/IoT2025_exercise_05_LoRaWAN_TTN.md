@@ -159,7 +159,9 @@ static const u1_t PROGMEM APPKEY[16] = { 0xA4, 0xB4, 0x4F, 0x33, 0x0E, 0x43, 0xD
 Sebastian will need your DevEUI
 
 You can also share devices and apps and gateways, by inviting other users.
-Sebastian is: _sebastianb_
+Sebastian is:
+
+sebastianb
 
 ```
 
