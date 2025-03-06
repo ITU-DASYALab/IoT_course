@@ -16,6 +16,10 @@
 mosquitto_sub -h <TTN-MQTT-server> -p 1883/8883 -t "#" -u "<applicationName>" -P "<API-key>"
 ```
 
+Note that you need to make an API key for this!
+
+Further explanation of the MQTT connection to TTN here: https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/TTN-MQTT-telegraf-Influx.md
+
   * Begin to think of how to get data from TTN into our database, baed on lecture
 
 ### The task
