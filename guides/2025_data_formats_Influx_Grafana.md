@@ -57,7 +57,7 @@ There is currently a script, a "webhook" at
 https://influx.itu.dk/iot2025/integration/rec-01.php
 ```
 
-which you might use (or you may write/configure your own).
+which you might use (or you may write/configure your own, e.g. using node-red, telegraf or any script language of your choice).
 
 This webhook handles any incoming messages that contain
 a Device ID
