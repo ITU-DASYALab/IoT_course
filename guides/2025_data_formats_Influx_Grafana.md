@@ -74,7 +74,7 @@ s:1442:"{"end_device_ids":{"device_id":"iot2025-sebastian","application_ids":{"a
 The corresponding Influx command looks like this:
 
 ```
-influx command - curl --request POST \
+curl --request POST \
 "http://localhost:8086/api/v2/write?org=iot2025&bucket=iot2025&precision=s" \
   --header "Authorization: Token JxwpvAuulwm_JXhZcPZVetmdqBu51WRmNalD8VcMUp35QZt1DjQZvXDXpiJbWFZhs-sn5jN0cb6LlDRrqd3kUw==" \
   --header "Content-Type: text/plain; charset=utf-8" \
