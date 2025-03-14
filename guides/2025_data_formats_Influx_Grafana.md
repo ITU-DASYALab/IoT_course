@@ -90,7 +90,7 @@ You can access Grafana here:
 
 https://influx.itu.dk:3000/
 
-(at the moment with one shared user:
+(either with one shared user or with the perosnal invitation you have received:
 ```
 2025student
 eej4Raipie4f
