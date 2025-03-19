@@ -302,3 +302,36 @@ There are different ways to query an InfluxDB database:
 ### Queries
 
 [Here](https://github.com/ITU-DASYALab/IoT_course/blob/main/guides/ttn_code_examples/grafana_queries.md) are some examples of queries that can be used in Grafana to get the data from the measurements that we have made earlier.
+
+
+## Overview of data flow
+
+```
+sensor node
+||				{LoRa - LoRaWAN}
+||
+Gateway
+||
+||				{ethernet - TCP/IP}
+||
+||
+TTN Network Server
+TTN Application Server
+||
+||________________________________________________
+||		||		||		||
+||		||		||		||
+mqtt		mqtt		mqtt		http POST
+||		||		||		||
+||		||		||		||
+telegraf	python		Node-RED	webhook		
+||		||		||		||
+||		||		||		||
+||______________||______________||______________||
+||
+InfluxDB
+||
+Grafana
+||
+(all kinds of data analytics)
+```
