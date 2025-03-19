@@ -6,19 +6,22 @@ from influxdb_client import Point
 from influxdb_client.client.write_api import SYNCHRONOUS
 import json
 
+
+#### NOTE you may have to adjust these settings!!! READ what you copypaste! :)
+
 TTN_ADDRESS = "eu1.cloud.thethings.network"
 TTN_PORT = 1883
-TTN_USER = "<redacted>"
-TTN_PASS = "<redacted>"
+TTN_USER = "iot2025-course@ttn"
+TTN_PASS = "NNSXS.YU3AC2K7WN7FPGME32KAYCERB3YEEEHL6DW6RIY.WDLKCM6HC2VXNZDMU5NRMEUPD7MQSHX65K2LLABWBQX5KUHXWYZA"
 ttn_client = Client(mqtt.CallbackAPIVersion.VERSION2)
 
-INFLUX_TOKEN = "anitXk8MLWjomML-hBh6XmgKbjtXAxURFQSdiZS8enfPwdeyddKuOfJuo89ZW0XySuwcZDOz_IX_9nyM9yml3w=="
+INFLUX_TOKEN = "JxwpvAuulwm_JXhZcPZVetmdqBu51WRmNalD8VcMUp35QZt1DjQZvXDXpiJbWFZhs-sn5jN0cb6LlDRrqd3kUw=="
 
-INFLUX_ORG = "iot2024"
+INFLUX_ORG = "iot2025"
 INFLUX_URL = "http://influx.itu.dk:8086"
-INFLUX_BUCKET = "iot2024_final"
+INFLUX_BUCKET = "iot2025"
 
-measurement_name = "bjornars_measurement"
+measurement_name = "YOUR_NAME_measurement"
 
 # Set up InfluxDB Client
 write_client = influxdb_client.InfluxDBClient(url=INFLUX_URL, token=INFLUX_TOKEN, org=INFLUX_ORG)
@@ -48,14 +51,20 @@ def on_ttn_message(client, userdata, msg):
         print(decoded_co2, decoded_humidity, decoded_temperature)
         # we recieve and read the relevant information into tags and fields
         # please replace with your name!
+
         point = Point(measurement_name) \
             .tag("device_id", message["end_device_ids"]["device_id"]) \
             .tag("dev_eui", message["end_device_ids"]["dev_eui"]) \
             .tag("app_eui", message["end_device_ids"]["join_eui"]) \
             .tag("port", int(message["uplink_message"]["f_port"])) \
+            # NOTE we have hardcoded our payload format here - if we send different measuremnets, keys, values, we need to adjust!
             .field("co2", decoded_co2) \
             .field("humidity", decoded_humidity) \
             .field("temperature", decoded_temperature) \
+            .field("pressure", decoded_pressure) \
+            .field("voc", decoded_voc) \
+            .field("altitude", decoded_altitude) \
+            .time(message["received_at"])  # Fix the timestamp to be the TTN received time
             .time(message["received_at"])  # Fix the timestamp to be the TTN received time
             
         print(point)
