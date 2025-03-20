@@ -250,7 +250,8 @@ sebastian_mqtt_python,app_eui=CAFFEEBABE202505,dev_eui=D4D4DAFFFE5CDF94,device_i
 
 The database server also has the telegraf daemon, which can be used to ingest mqtt messages.
 
-(We currently havent configured that. Might still do it until exercises time .. :) )
+We have configured a a so-called mqtt_consumer now, for all messages reaching the TTN Application "iot2025-sebastian",
+__and we can set up the equivalent for your applicatin!__
 
 
 
@@ -278,7 +279,8 @@ and a decoded payload as defined above.
 and adds it to a measurement "iot2025" in bucket "iot2025", tagged with the Device ID.
 
 __WARNING! This script is currently not protected against malformatted messages!
-In case your message does NOT contain the payload fields agreed on, it will likely just fail. At best ... :)__
+In case your message does NOT contain the payload fields agreed on, it will likely just fail. At best ... :)
+This is a design flaw - the cript is manually adjusted for just ONE specific message format!__
 
 
 ## Timeseries Database
