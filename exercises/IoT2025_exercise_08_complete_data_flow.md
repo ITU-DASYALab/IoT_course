@@ -250,6 +250,8 @@ sebastian_mqtt_python,app_eui=CAFFEEBABE202505,dev_eui=D4D4DAFFFE5CDF94,device_i
 
 The database server also has the telegraf daemon, which can be used to ingest mqtt messages.
 
+(https://docs.influxdata.com/influxdb/v2/write-data/no-code/use-telegraf/)
+
 We have configured a a so-called mqtt_consumer now, for all messages reaching the TTN Application "iot2025-sebastian",
 __and we can set up the equivalent for your applicatin!__
 
