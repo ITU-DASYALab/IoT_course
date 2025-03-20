@@ -1,5 +1,7 @@
 ## Example of complete code for ESP32 T-Beam
 
+NOTE: there are device specifc settings!!! circa line 65 ...
+
 ```
 /*******************************************************************************
  * Copyright (c) 2015 Thomas Telkamp and Matthijs Kooijman
