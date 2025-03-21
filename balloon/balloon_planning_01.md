@@ -23,13 +23,17 @@ CO2 - ENS160
 
 VOC - ENS160, (SEN5x?)
 
-	BME280 - ENS160 are in the sparkfun EnvCombo - tested and used in course
+	BME280 - ENS160 are in the sparkfun EnvCombo - tested and used in course - we have 10 x
 
 PM - SPS30, SEN5x
+
+	we have 2x SEN55
 
 GPS - T-Beam Ublox
 
 Light?
+
+	we have VEML6030 (
 
 CR, cam?
 
