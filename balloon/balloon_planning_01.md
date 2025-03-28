@@ -64,11 +64,15 @@ LoRa 433 - TinyGS ?
 ## Questions
 
   * Bottom of box - material - RF transparent? likely not - Mylar ...
-  * Can we have several feedthroughs/openings?
-  * Possibility of window?
+    * not really - it s partly transparent
+    * 
+  * 	
+  * Can we have several feedthroughs/openings? Rather not ... 2 total would be good
+  * Possibility of window? yes
   
   * Enclosures - like https://www.bopla.de/en/enclosure-technology/bocube but smaller
   * Conformal Coatings - https://artist-3d.com/silicone-conformal-coating/
+  * onshape
 
 
 
