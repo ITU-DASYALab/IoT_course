@@ -23,7 +23,8 @@ you have access with
 ```
 iot2025
 very34sy
-``
+```
+
 
 
 Let us assume that our sensor was a little more important than it is now.
