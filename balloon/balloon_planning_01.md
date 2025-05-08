@@ -82,3 +82,21 @@ LoRa 433 - TinyGS ?
 ### Habtec, NN funded
 
 First week June
+
+
+# Worklog
+
+## sensors and people
+
+```
+thwr - camera 
+suho - IMU / PM sensor 
+chbl - UV / IR sensor
+acse - OG sensor / BM68x
+json - altitude and temprature sensor 
+mseo - gamma radiation sensor / ionized particle sensor 
+aile - humidity sensor  / has kit 02
+
+```
+
+##
