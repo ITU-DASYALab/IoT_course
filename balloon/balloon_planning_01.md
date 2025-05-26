@@ -89,13 +89,19 @@ First week June
 ## sensors and people
 
 ```
-thwr - camera 
-suho - IMU / PM sensor 
+thwr - camera
+
+suho - IMU / PM sensor
+
 chbl - UV / IR sensor
+
 acse - OG sensor / BM68x
-json - altitude and temprature sensor 
-mseo - gamma radiation sensor / ionized particle sensor 
-aile - humidity sensor  / has kit 02
+
+json - altitude and temprature sensor
+
+mseo - gamma radiation sensor / ionized particle sensor
+
+aile - temp & humidity sensor, 2 different ones
 
 ```
 
