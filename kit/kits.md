@@ -2,7 +2,7 @@
 
 ## What's in it?
 
- - Lilygo T-Beam v1.1
+ - Lilygo T-Beam v1.1 or 1.2 (- good to have it unifom for one course. less trouble ...)
    - incl antenna and headers
   
 - USB micro cable
